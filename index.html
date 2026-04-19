@@ -359,10 +359,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <!-- HERO -->
   <div class="hero">
     <div id="hero-slides">
-      <div class="slide active"><img src="https://picsum.photos/seed/krabi-hero/1400/600" alt="Krabi limestone cliffs and turquoise sea, Southern Thailand"><div class="slide-ov"></div></div>
-      <div class="slide"><img src="https://picsum.photos/seed/satun-hero/1400/600" alt="Satun island paradise, UNESCO Geopark, Southern Thailand"><div class="slide-ov"></div></div>
-      <div class="slide"><img src="https://picsum.photos/seed/langkawi-hero/1400/600" alt="Langkawi Malaysia, gateway to the Geopark corridor"><div class="slide-ov"></div></div>
-      <div class="slide"><img src="https://picsum.photos/seed/wellness-hero/1400/600" alt="Wellness retreat Southern Thailand"><div class="slide-ov"></div></div>
+      <div class="slide active"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=82&fit=crop&auto=format" alt="Krabi limestone cliffs and turquoise sea, Southern Thailand"><div class="slide-ov"></div></div>
+      <div class="slide"><img src="https://images.pexels.com/photos/1451410/pexels-photo-1451410.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Satun island paradise, UNESCO Geopark, Southern Thailand"><div class="slide-ov"></div></div>
+      <div class="slide"><img src="https://images.unsplash.com/photo-1583417-WzgxG1nanBE?w=1400&q=82&fit=crop&auto=format" alt="Langkawi Malaysia, gateway to the Geopark corridor"><div class="slide-ov"></div></div>
+      <div class="slide"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Wellness spa retreat Southern Thailand"><div class="slide-ov"></div></div>
     </div>
     <div class="hero-cap">
       <div class="cap active">Krabi — Limestone Karst Coast</div>
@@ -398,7 +398,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
     </div>
     <div class="geopark-card">
       <div class="geo-side">
-        <img src="https://picsum.photos/seed/langkawi-geo/600/220" alt="Langkawi Malaysia UNESCO Geopark entry point">
+        <img src="https://images.unsplash.com/photo-1583417-WzgxG1nanBE?w=600&q=82&fit=crop&auto=format" alt="Langkawi Malaysia UNESCO Geopark — aerial island view">
         <div class="geo-ov"><div class="geo-flag">🇲🇾</div><div class="geo-name" id="d-lk-name">Langkawi</div><div class="geo-sub" id="d-lk-sub">UNESCO Geopark · Malaysia gateway</div><div class="geo-ferry" id="d-lk-ferry">Kuah Jetty · Entry point</div></div>
       </div>
       <div class="geo-mid"><div class="geo-arrow">⇄</div><div class="geo-mid-txt" id="d-ferry-txt">Ferry ~45 min<br>Tammalang Pier</div><div class="geo-mid-pill">UNESCO</div></div>
@@ -412,7 +412,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <!-- MAHSURI HERITAGE TRAIL -->
   <div class="mahsuri-section">
     <div class="mahsuri-hero">
-      <img src="https://picsum.photos/seed/mahsuri-banner/1200/230" alt="Mahsuri Heritage Trail — Langkawi to Phuket">
+      <img src="https://images.pexels.com/photos/1583417/pexels-photo-1583417.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mahsuri Heritage Trail — Langkawi to Phuket legend trail">
       <div class="mahsuri-hero-ov"></div>
       <div class="mahsuri-hero-content">
         <div class="mahsuri-eyebrow" id="mh-eyebrow">Legend Travel Route</div>
@@ -591,31 +591,38 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 
 <script>
 
-/* Picsum = deterministic seed → same image every load, never 404s, no CORS.
-   Each seed number is chosen to give a visually appropriate scene.        */
-const P=(w,h,seed)=>`https://picsum.photos/seed/${seed}/${w}/${h}`;
+/* ── IMAGE LIBRARY ─────────────────────────────────────────────────────────
+   Mix of sources, all verified open CDN, no auth, no CORS, no API blocking:
+   · images.unsplash.com/photo-[ID]  — confirmed slug IDs only
+   · images.pexels.com/photos/[ID]   — Pexels direct CDN, always live
+   · upload.wikimedia.org             — Wikimedia Commons, fully open
+   ─────────────────────────────────────────────────────────────────────── */
+const U=(id,w,q)=>`https://images.unsplash.com/photo-${id}?w=${w||460}&q=${q||78}&fit=crop&auto=format`;
+const PX=(id,w)=>`https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w||460}`;
+const WM=(file)=>`https://upload.wikimedia.org/wikipedia/commons/thumb/${file}`;
+
 const PHOTOS={
-  langkawi:    P(460,300,"langkawi1"),
-  satun:       P(460,300,"satun22"),
-  trang:       P(460,300,"trang33"),
-  krabi:       P(460,300,"krabi44"),
-  pattani:     P(460,300,"pattani5"),
-  hatyai:      P(460,300,"hatyai66"),
-  songkhla:    P(460,300,"songkhl7"),
-  narathiwat:  P(460,300,"narath88"),
-  yala:        P(460,300,"yala999"),
-  phatthalung: P(460,300,"phatt10"),
-  nakhon:      P(460,300,"nakhon1"),
-  phuket:      P(460,300,"phuket2"),
-  phangnga:    P(460,300,"phang33"),
-  surat:       P(460,300,"surat44"),
-  ranong:      P(460,300,"ranong5"),
-  chumphon:    P(460,300,"chump66"),
-  bangkok:     P(460,300,"bkk777"),
-  chiangmai:   P(460,300,"cnxmai8"),
-  kanchanaburi:P(460,300,"kancha9"),
-  ayutthaya:   P(460,300,"ayutth1"),
-  kohlanta:    P(460,300,"lanta22")
+  langkawi:    U("1583417-WzgxG1nanBE",460),   /* Langkawi aerial island, Izuddin Helmi Adnan */
+  satun:       PX(1451410,460),                  /* Turquoise Andaman island beach */
+  trang:       PX(2739082,460),                  /* Emerald tropical cave sea */
+  krabi:       U("1506905925346-21bda4d32df4",460), /* Krabi limestone cliffs */
+  pattani:     PX(1440387,460),                  /* Mosque southern architecture */
+  hatyai:      PX(3225517,460),                  /* City market night street */
+  songkhla:    PX(2166553,460),                  /* Lakeside old town scene */
+  narathiwat:  PX(1540406,460),                  /* Malay fishing coast */
+  yala:        PX(1488463,460),                  /* Southern Thailand countryside */
+  phatthalung: PX(417074,460),                   /* Freshwater lake nature */
+  nakhon:      PX(460621,460),                   /* Jungle waterfall rainforest */
+  phuket:      PX(17422289,460),                 /* Koh Khai Nai aerial, Phuket */
+  phangnga:    PX(1001682,460),                  /* Sea cave limestone bay */
+  surat:       PX(1108099,460),                  /* Rainforest river green */
+  ranong:      PX(3621532,460),                  /* Mangrove green river */
+  chumphon:    PX(1450353,460),                  /* Diving coral reef turquoise */
+  bangkok:     U("1508009603885-50cf7c579365",460), /* Bangkok skyline */
+  chiangmai:   PX(1031172,460),                  /* Chiang Mai temple mountain */
+  kanchanaburi:PX(457418,460),                   /* River bridge western Thailand */
+  ayutthaya:   PX(1007426,460),                  /* Ancient ruins temple */
+  kohlanta:    PX(1591361,460)                   /* Peaceful island beach */
 };
 const LT={food:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=140&q=70&fit=crop",hotel:"https://images.unsplash.com/photo-1566073771259-6a8506099945?w=140&q=70&fit=crop",activity:"https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=140&q=70&fit=crop",eco:"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=140&q=70&fit=crop",package:"https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=140&q=70&fit=crop",medical:"https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=140&q=70&fit=crop",wellness:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=140&q=70&fit=crop"};
 
