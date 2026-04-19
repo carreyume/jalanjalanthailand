@@ -7,7 +7,1006 @@
 <meta name="description" content="Discover halal-friendly travel in Southern Thailand. Muslim-friendly hotels, halal restaurants, eco-tours, medical tourism and wellness retreats across all 14 southern provinces. Follow the legendary Mahsuri Trail from Langkawi to Phuket.">
 <style>
 :root{
-  --mint:#00C896;--mint-d:#00a07a;--mint-l:#d0f5eb;--mint-text:#004d38;
+  --mint:#00C896;--mint-d:#00a07a;--mint-l:#d0f5eb;--mint-text:#004d38;<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
+<title>Jalan-Jalan Thailand | Halal Travel Guide — Southern Thailand</title>
+<meta name="description" content="Discover halal travel in Southern Thailand. Muslim-friendly hotels, restaurants, eco-tours, medical tourism and wellness. Follow the Mahsuri Heritage Trail from Langkawi to Phuket.">
+<meta name="keywords" content="halal travel Thailand, Muslim-friendly Thailand, halal Southern Thailand, medical tourism Thailand, wellness retreat Thailand, Mahsuri Trail, Langkawi Satun Geopark, Malaysian travel Thailand">
+<meta property="og:title" content="Jalan-Jalan Thailand | Halal Travel Guide">
+<meta property="og:description" content="Curated halal travel across Southern Thailand — eco-adventures, wellness, medical tourism and the Mahsuri Heritage Trail.">
+<meta property="og:type" content="website">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --mint:#00C896;--mint-d:#009e78;--mint-l:#d0f5eb;--mint-txt:#004d38;
+  --coral:#FF6B6B;--gold:#FFB347;--purple:#845EC2;
+  --navy:#0B2D48;--navy2:#1a4a6e;
+  --text:#1a2332;--muted:#5a6a7a;--hint:#8a9aaa;
+  --bg:#f0f4f8;--white:#fff;
+  --r:14px;--r-sm:10px;
+  --sh:0 2px 12px rgba(0,0,0,.09);--sh-h:0 6px 24px rgba(0,0,0,.14);
+}
+html{font-size:16px}
+body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;-webkit-tap-highlight-color:transparent}
+img{display:block;width:100%;height:100%;object-fit:cover}
+button,a{outline:none}
+button:focus-visible,a:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);white-space:nowrap}
+
+/* ── NAV ── */
+.nav{background:var(--navy);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 1rem;gap:.75rem;position:sticky;top:0;z-index:300;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.brand{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.brand-mark{width:30px;height:30px;border-radius:8px;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:#fff}
+.brand-name{font-size:14px;font-weight:900;color:#fff;white-space:nowrap}
+.brand-name span{color:var(--mint)}
+.nav-tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;flex:1;justify-content:flex-end}
+.nav-tabs::-webkit-scrollbar{display:none}
+.nav-tab{padding:6px 10px;border-radius:7px;font-size:11px;font-weight:700;color:rgba(255,255,255,.65);border:none;background:transparent;cursor:pointer;white-space:nowrap;min-height:36px;transition:all .15s;flex-shrink:0}
+.nav-tab.active{background:var(--mint);color:#fff}
+.lang-wrap{display:flex;gap:4px;flex-shrink:0}
+.lang-btn{padding:5px 9px;border-radius:6px;border:1.5px solid rgba(255,255,255,.25);background:transparent;font-size:11px;font-weight:800;color:rgba(255,255,255,.65);cursor:pointer;min-height:32px}
+.lang-btn.active{border-color:var(--mint);color:var(--mint)}
+
+/* ── PAGES ── */
+.page{display:none}.page.active{display:block}
+
+/* ── HERO ── */
+.hero{position:relative;height:420px;overflow:hidden;margin:.75rem;border-radius:var(--r);box-shadow:var(--sh)}
+@media(min-width:600px){.hero{height:520px}}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.slide.active{opacity:1}
+.slide-img{width:100%;height:100%;object-fit:cover;background:#1a4a6e}
+.slide-ov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(11,45,72,.15) 0%,rgba(11,45,72,.72) 100%)}
+.hero-content{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.25rem;gap:.875rem}
+.hero-badge{background:rgba(0,200,150,.22);border:1.5px solid rgba(0,200,150,.55);color:#fff;font-size:10px;font-weight:800;padding:4px 14px;border-radius:30px;letter-spacing:.07em;text-transform:uppercase}
+.hero-h1{font-size:clamp(26px,6vw,44px);font-weight:900;color:#fff;line-height:1.1;text-shadow:0 2px 20px rgba(0,0,0,.3);letter-spacing:-.4px;max-width:560px}
+.hero-sub{font-size:clamp(13px,3vw,16px);color:rgba(255,255,255,.88);max-width:480px;line-height:1.6;font-weight:500}
+.hero-search{background:rgba(255,255,255,.97);border-radius:50px;padding:6px 6px 6px 18px;display:flex;align-items:center;gap:6px;width:100%;max-width:500px;box-shadow:0 6px 24px rgba(0,0,0,.2)}
+.hero-search input{flex:1;border:none;outline:none;font-size:14px;color:var(--text);background:transparent;min-width:0}
+.hero-sbtn{background:var(--mint);color:#fff;border:none;border-radius:40px;padding:9px 18px;font-size:13px;font-weight:800;cursor:pointer;white-space:nowrap}
+.hero-pills{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.hero-pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.9);font-size:11px;font-weight:600;padding:4px 11px;border-radius:20px;cursor:pointer}
+.hero-dots{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:3}
+.hdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);border:none;cursor:pointer;padding:0;transition:all .2s}
+.hdot.active{background:#fff;width:20px;border-radius:3px}
+.hero-cap{position:absolute;bottom:36px;width:100%;text-align:center;z-index:3;font-size:11px;font-weight:700;color:rgba(255,255,255,.72);letter-spacing:.06em;text-transform:uppercase}
+.cap{display:none}.cap.active{display:block}
+
+/* HERO IMAGE FALLBACK COLORS — show while image loads / if it fails */
+.slide:nth-child(1) .slide-img{background:linear-gradient(135deg,#0a3d5e 0%,#1a7a5e 100%)}
+.slide:nth-child(2) .slide-img{background:linear-gradient(135deg,#0d4f7c 0%,#0a9e75 100%)}
+.slide:nth-child(3) .slide-img{background:linear-gradient(135deg,#005f73 0%,#0a3d5e 100%)}
+.slide:nth-child(4) .slide-img{background:linear-gradient(135deg,#2d4a22 0%,#1a7a5e 100%)}
+
+/* ── TRUST BAR ── */
+.trust-bar{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;padding:1rem;margin:.5rem .75rem;background:var(--white);border-radius:var(--r-sm);box-shadow:var(--sh)}
+.trust-item{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--muted)}
+
+/* ── VALUES ── */
+.values-strip{margin:.5rem .75rem;border-radius:var(--r);background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);padding:1.25rem;display:flex;flex-wrap:wrap;gap:.875rem;justify-content:center}
+.val-card{flex:1;min-width:140px;max-width:200px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-sm);padding:.875rem;text-align:center}
+.val-icon{font-size:22px;margin-bottom:.35rem}
+.val-title{font-size:12px;font-weight:800;color:#fff;margin-bottom:.2rem}
+.val-desc{font-size:11px;color:rgba(255,255,255,.65);line-height:1.45}
+
+/* ── SECTIONS ── */
+.section{padding:1.25rem .75rem}
+.sec-lbl{font-size:10px;font-weight:800;color:var(--mint);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem}
+.sec-title{font-size:clamp(18px,4vw,24px);font-weight:900;color:var(--navy);line-height:1.2;letter-spacing:-.2px}
+.sec-sub{font-size:13px;color:var(--muted);margin-top:.25rem;font-weight:500}
+.sec-hdr{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem}
+.ghost-btn{background:var(--white);border:1.5px solid #d8e0ea;border-radius:var(--r-sm);padding:8px 14px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;min-height:40px;white-space:nowrap}
+.ghost-btn:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ── GEOPARK ── */
+.geopark-card{display:grid;grid-template-columns:1fr auto 1fr;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.geo-side{position:relative;height:clamp(140px,30vw,200px);background:#1a4a6e}
+.geo-side img{width:100%;height:100%;object-fit:cover}
+.geo-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,45,72,.82) 0%,rgba(11,45,72,.05) 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:.875rem}
+.geo-flag{font-size:16px;margin-bottom:3px}
+.geo-name{font-size:clamp(13px,3vw,17px);font-weight:900;color:#fff}
+.geo-sub{font-size:10px;color:rgba(255,255,255,.78);margin-top:1px;font-weight:600}
+.geo-ferry{margin-top:4px;display:inline-block;background:var(--mint);color:#fff;font-size:9px;font-weight:800;padding:2px 8px;border-radius:20px}
+.geo-mid{background:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:.75rem .5rem;width:80px}
+.geo-arrow{font-size:18px;color:var(--mint);font-weight:900}
+.geo-mid-txt{font-size:9px;color:var(--muted);text-align:center;line-height:1.4;font-weight:700}
+.geo-pill{background:var(--mint-l);color:var(--mint-txt);font-size:8px;font-weight:800;padding:2px 7px;border-radius:20px}
+
+/* ── MAHSURI ── */
+.mahsuri-wrap{margin:.5rem .75rem;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.mahsuri-hero{position:relative;height:clamp(140px,35vw,200px);background:linear-gradient(135deg,#3d1a78 0%,#1a4a6e 100%)}
+.mahsuri-hero img{width:100%;height:100%;object-fit:cover}
+.mahsuri-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(132,94,194,.8),rgba(11,45,72,.7))}
+.mahsuri-hcontent{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:1.25rem}
+.mh-eyebrow{font-size:10px;font-weight:800;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.09em;margin-bottom:.4rem}
+.mh-title{font-size:clamp(18px,4vw,24px);font-weight:900;color:#fff;line-height:1.2;margin-bottom:.4rem}
+.mh-sub{font-size:12px;color:rgba(255,255,255,.82);max-width:400px;line-height:1.55;font-weight:500}
+.mahsuri-body{background:var(--white);padding:1.25rem}
+.mahsuri-story{font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:1.25rem;font-style:italic;border-left:4px solid var(--purple);padding-left:.875rem;font-weight:500}
+.route-label{font-size:13px;font-weight:800;color:var(--navy);margin-bottom:.875rem}
+.mahsuri-route{display:flex;overflow-x:auto;gap:.75rem;padding-bottom:.5rem;scrollbar-width:none}
+.mahsuri-route::-webkit-scrollbar{display:none}
+.route-stop{flex:0 0 clamp(130px,35vw,170px);background:var(--white);border-radius:var(--r-sm);overflow:hidden;box-shadow:var(--sh);position:relative;border:1px solid #eef2f7}
+.route-stop-img{height:80px;background:#1a4a6e;overflow:hidden}
+.route-stop-img img{width:100%;height:100%;object-fit:cover}
+.route-stop-num{position:absolute;top:6px;right:6px;width:20px;height:20px;border-radius:50%;background:var(--purple);color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.route-stop-body{padding:.625rem}
+.route-stop-name{font-size:12px;font-weight:800;color:var(--navy);margin-bottom:2px}
+.route-stop-detail{font-size:10px;color:var(--muted);line-height:1.4}
+.mahsuri-cta-row{margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+.mahsuri-cta{background:var(--purple);color:#fff;border:none;border-radius:var(--r-sm);padding:10px 18px;font-size:13px;font-weight:800;cursor:pointer;box-shadow:0 3px 12px rgba(132,94,194,.35)}
+.mahsuri-note{font-size:12px;color:var(--muted);font-weight:500}
+
+/* ── SPONSOR ── */
+.sponsor-banner{margin:.5rem .75rem;border-radius:var(--r-sm);background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);padding:1.1rem 1.25rem;box-shadow:var(--sh)}
+.sp-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.875rem}
+.sp-label{font-size:10px;font-weight:800;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.09em;margin-bottom:.2rem}
+.sp-text{font-size:clamp(14px,3vw,17px);font-weight:900;color:#fff}
+.sp-sub{font-size:11px;color:rgba(255,255,255,.6);margin-top:.15rem}
+.sp-slots{display:flex;gap:.5rem}
+.sp-slot{width:46px;height:46px;border-radius:8px;background:rgba(255,255,255,.09);border:1.5px dashed rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:9px;color:rgba(255,255,255,.35);font-weight:700;text-align:center;line-height:1.3}
+.sp-btn{background:var(--mint);color:#fff;border:none;border-radius:var(--r-sm);padding:10px 16px;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;min-height:40px}
+
+/* ── REGION GRID ── */
+.region-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+@media(min-width:500px){.region-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:700px){.region-grid{grid-template-columns:repeat(4,1fr)}}
+.region-card{border-radius:var(--r-sm);overflow:hidden;background:var(--white);box-shadow:var(--sh);cursor:pointer;transition:transform .18s,box-shadow .18s;position:relative}
+.region-card:hover:not(.cs){transform:translateY(-4px);box-shadow:var(--sh-h)}
+.region-card.anc{box-shadow:0 0 0 2px var(--mint),var(--sh)}
+.region-card.cs{opacity:.65;cursor:default}
+.region-img{height:clamp(100px,22vw,150px);overflow:hidden;position:relative;background:#1a4a6e}
+.region-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.region-card:hover:not(.cs) .region-img img{transform:scale(1.07)}
+.badge-row{position:absolute;top:6px;left:6px;display:flex;gap:3px;flex-wrap:wrap;z-index:2;max-width:88%}
+.bdg{font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px}
+.b-anc{background:var(--mint);color:#fff}.b-pop{background:var(--coral);color:#fff}
+.b-eco{background:#1b7a4a;color:#fff}.b-cul{background:var(--purple);color:#fff}
+.b-med{background:#1565C0;color:#fff}.b-soon{background:rgba(0,0,0,.55);color:#fff}
+.region-body{padding:.75rem}
+.region-name{font-size:13px;font-weight:900;color:var(--navy);margin-bottom:1px}
+.region-prov{font-size:10px;color:var(--hint);font-weight:600;margin-bottom:2px}
+.region-tagline{font-size:11px;color:var(--muted);margin-bottom:.4rem;line-height:1.35}
+.region-tags{display:flex;flex-wrap:wrap;gap:3px}
+.r-tag{font-size:9px;padding:2px 6px;border-radius:20px;background:var(--bg);color:var(--muted);font-weight:600}
+.rows-extra{display:none;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:.75rem}
+.rows-extra.open{display:grid}
+@media(min-width:500px){.rows-extra{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:700px){.rows-extra{grid-template-columns:repeat(4,1fr)}}
+.show-more-wrap{text-align:center;padding:.875rem 0 1.1rem}
+.show-more-btn{background:var(--white);border:1.5px solid #d8e0ea;border-radius:var(--r-sm);padding:11px 28px;font-size:14px;font-weight:800;color:var(--navy);cursor:pointer;box-shadow:var(--sh);min-height:44px}
+.show-more-btn:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ── LISTINGS PANEL ── */
+.listings-panel{display:none;margin:.5rem .75rem 1.25rem;background:var(--white);border-radius:var(--r);box-shadow:var(--sh)}
+.listings-panel.open{display:block}
+.lp-hdr{padding:1rem;border-bottom:1px solid #eef2f7;display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.lp-title{font-size:15px;font-weight:900;color:var(--navy)}
+.lp-close{background:var(--bg);border:1.5px solid #d8e0ea;border-radius:var(--r-sm);padding:7px 14px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;min-height:40px}
+.cat-row{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;padding:.875rem 1rem;border-bottom:1px solid #eef2f7;scrollbar-width:none}
+.cat-row::-webkit-scrollbar{display:none}
+.cat-btn{padding:7px 13px;border-radius:30px;border:1.5px solid #d8e0ea;background:var(--white);font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;min-height:40px;white-space:nowrap;flex-shrink:0}
+.cat-btn.active{background:var(--mint);color:#fff;border-color:var(--mint)}
+.lp-list{padding:.875rem 1rem;display:flex;flex-direction:column;gap:.75rem}
+.listing-card{display:flex;gap:12px;padding:.875rem;border-radius:var(--r-sm);background:var(--white);box-shadow:var(--sh);border:1px solid #eef2f7}
+.lthumb{width:60px;height:60px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#d8e0ea}
+.lthumb img{width:100%;height:100%;object-fit:cover}
+.lbody{flex:1;min-width:0}
+.lname{font-size:13px;font-weight:800;color:var(--navy);margin-bottom:3px}
+.ldesc{font-size:11px;color:var(--muted);line-height:1.45;margin-bottom:5px}
+.lmeta{display:flex;flex-wrap:wrap;gap:4px}
+.lcat{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:700}
+.lcat-food{background:#fff3e0;color:#c05700}.lcat-hotel{background:#e3f2fd;color:#1455a0}
+.lcat-activity{background:#e8f5e9;color:#1b6e2a}.lcat-eco{background:#e0f7f0;color:#00695c}
+.lcat-package{background:#ede7f6;color:#5b21b6}.lcat-medical{background:#e8eaf6;color:#283593}
+.lcat-wellness{background:#fce4ec;color:#880e4f}
+.halal-pill{background:var(--mint-l);color:var(--mint-txt);font-size:10px;font-weight:800;padding:2px 8px;border-radius:20px}
+.reg-pill{background:var(--bg);color:var(--muted);font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px}
+.no-results{text-align:center;padding:2rem;color:var(--muted);font-size:13px;font-weight:600}
+
+/* ── VIDEO SECTION ── */
+.video-section{padding:1.25rem .75rem}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+@media(min-width:600px){.video-grid{grid-template-columns:repeat(4,1fr)}}
+.video-card{border-radius:var(--r-sm);overflow:hidden;background:var(--white);box-shadow:var(--sh);cursor:pointer}
+.video-card:hover{box-shadow:var(--sh-h)}
+.vthumb{position:relative;overflow:hidden;background:#1a4a6e}
+.vthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.vthumb.landscape img{height:clamp(90px,18vw,130px)}
+.vthumb.portrait img{height:clamp(110px,25vw,170px)}
+.vplay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;font-size:16px}
+.vplatform{position:absolute;top:6px;right:6px;font-size:9px;font-weight:800;padding:2px 7px;border-radius:20px;background:rgba(0,0,0,.65);color:#fff}
+.vbody{padding:.625rem .75rem}
+.vchannel{font-size:10px;font-weight:700;color:var(--mint);margin-bottom:2px}
+.vtitle{font-size:12px;font-weight:800;color:var(--navy);margin-bottom:2px;line-height:1.35}
+.vmeta{font-size:10px;color:var(--hint)}
+
+/* ── BLOG SECTION ── */
+.blog-section{padding:1.25rem .75rem}
+.blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+@media(min-width:600px){.blog-grid{grid-template-columns:repeat(4,1fr)}}
+.blog-card{border-radius:var(--r-sm);overflow:hidden;background:var(--white);box-shadow:var(--sh);cursor:pointer}
+.blog-card:hover{box-shadow:var(--sh-h)}
+.blog-img{height:clamp(100px,22vw,150px);overflow:hidden;position:relative;background:#2d4a22}
+.blog-img img{width:100%;height:100%;object-fit:cover}
+.blog-cat-badge{position:absolute;top:8px;left:8px;font-size:9px;font-weight:800;padding:2px 8px;border-radius:20px}
+.bc-eco{background:var(--mint);color:#fff}.bc-culture{background:var(--purple);color:#fff}
+.bc-medical{background:#1565C0;color:#fff}.bc-food{background:var(--coral);color:#fff}
+.blog-body{padding:.75rem}
+.blog-author-row{display:flex;align-items:center;gap:6px;margin-bottom:.4rem}
+.blog-avatar{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;flex-shrink:0}
+.blog-author{font-size:10px;font-weight:700;color:var(--muted)}
+.blog-date{font-size:9px;color:var(--hint)}
+.blog-title{font-size:12px;font-weight:800;color:var(--navy);margin-bottom:.3rem;line-height:1.35}
+.blog-excerpt{font-size:11px;color:var(--muted);line-height:1.45;margin-bottom:.4rem}
+.blog-read{font-size:11px;font-weight:700;color:var(--mint)}
+
+/* ── ECO STRIP ── */
+.eco-strip{margin:.5rem .75rem;border-radius:var(--r);background:linear-gradient(135deg,#064e3b 0%,#065f46 100%);padding:1.5rem 1.1rem;text-align:center}
+.eco-title{font-size:clamp(16px,3.5vw,20px);font-weight:900;color:#fff;margin-bottom:.3rem}
+.eco-sub{font-size:12px;color:rgba(255,255,255,.7);margin-bottom:1.1rem;font-weight:500}
+.eco-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+@media(min-width:500px){.eco-cards{grid-template-columns:repeat(4,1fr)}}
+.eco-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:var(--r-sm);padding:.75rem;text-align:center}
+.eco-icon{font-size:20px;margin-bottom:.3rem}
+.eco-card-title{font-size:11px;font-weight:800;color:#fff;margin-bottom:.15rem}
+.eco-card-desc{font-size:10px;color:rgba(255,255,255,.68);line-height:1.45}
+
+/* ── ACEH ── */
+.aceh-strip{margin:.5rem .75rem .875rem;padding:.75rem 1rem;border:2px dashed #d8e0ea;border-radius:var(--r-sm);display:flex;align-items:center;gap:8px;background:var(--white)}
+.aceh-dot{width:8px;height:8px;border-radius:50%;background:var(--hint);flex-shrink:0}
+
+/* ── FOOTER ── */
+.footer{background:var(--navy);padding:1.5rem .875rem}
+.footer-grid{display:flex;flex-direction:column;gap:1.25rem;margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:600px){.footer-grid{flex-direction:row;justify-content:space-between}}
+.footer-brand{font-size:17px;font-weight:900;color:#fff;margin-bottom:.35rem}
+.footer-tagline{font-size:12px;color:rgba(255,255,255,.55);line-height:1.6;max-width:240px}
+.footer-seo{font-size:10px;color:rgba(255,255,255,.27);margin-top:.75rem;line-height:1.75;max-width:280px}
+.footer-col-title{font-size:10px;font-weight:800;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.625rem}
+.footer-lnk{display:block;font-size:12px;color:rgba(255,255,255,.55);margin-bottom:.35rem;font-weight:500;text-decoration:none}
+.footer-bottom{display:flex;flex-direction:column;gap:.625rem}
+@media(min-width:500px){.footer-bottom{flex-direction:row;align-items:center;justify-content:space-between}}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.28)}
+.footer-tags{display:flex;flex-wrap:wrap;gap:4px}
+.footer-tag{font-size:9px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.35);padding:2px 8px;border-radius:20px;font-weight:600}
+
+/* ── SEARCH ── */
+.search-wrap{padding:1.25rem .75rem}
+.search-row{display:flex;flex-direction:column;gap:.625rem;margin-bottom:.875rem}
+@media(min-width:480px){.search-row{flex-direction:row}}
+.search-row input,.search-row select{padding:11px 14px;border:1.5px solid #d8e0ea;border-radius:var(--r-sm);font-size:14px;color:var(--text);background:var(--white);outline:none;font-weight:600;min-height:46px}
+.search-row input{width:100%}
+.search-row select{min-height:46px}
+.search-row input:focus,.search-row select:focus{border-color:var(--mint)}
+.filter-row{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;margin-bottom:.875rem;padding-bottom:2px;scrollbar-width:none}
+.filter-row::-webkit-scrollbar{display:none}
+.filter-pill{padding:7px 13px;border-radius:30px;border:1.5px solid #d8e0ea;background:var(--white);font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;min-height:40px;white-space:nowrap;flex-shrink:0}
+.filter-pill.active{background:var(--mint);color:#fff;border-color:var(--mint)}
+.result-count{font-size:12px;color:var(--muted);font-weight:700;margin-bottom:.75rem}
+
+/* ── ROUTE ── */
+.route-wrap{padding:1.25rem .75rem}
+.add-row{display:flex;flex-direction:column;gap:.625rem;margin-bottom:1.1rem}
+@media(min-width:400px){.add-row{flex-direction:row}}
+.add-row select{flex:1;padding:11px 14px;border:1.5px solid #d8e0ea;border-radius:var(--r-sm);font-size:14px;background:var(--white);color:var(--text);outline:none;font-weight:600;min-height:46px;width:100%}
+.add-row select:focus{border-color:var(--mint)}
+.add-stop-btn{background:var(--mint);color:#fff;border:none;border-radius:var(--r-sm);padding:12px 20px;font-size:14px;font-weight:800;cursor:pointer;min-height:46px;white-space:nowrap}
+.stop-empty{padding:1.5rem;border:2px dashed #d8e0ea;border-radius:var(--r-sm);text-align:center;color:var(--muted);font-size:13px;font-weight:600}
+.stop-card{display:flex;align-items:center;gap:10px;background:var(--white);border-radius:var(--r-sm);padding:.75rem;margin-bottom:8px;box-shadow:var(--sh);border:1px solid #eef2f7}
+.stop-card.anch{border-color:var(--mint);border-width:2px}
+.stop-num{width:28px;height:28px;border-radius:50%;background:var(--mint-l);color:var(--mint-txt);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.stop-img{width:40px;height:40px;border-radius:7px;overflow:hidden;flex-shrink:0;background:#d8e0ea}
+.stop-img img{width:100%;height:100%;object-fit:cover}
+.stop-body{flex:1}
+.stop-name{font-size:13px;font-weight:800;color:var(--navy)}
+.stop-detail{font-size:11px;color:var(--muted);margin-top:1px}
+.stop-conn{font-size:11px;color:var(--mint);font-weight:700;padding:2px 0 2px 26px;border-left:2px dashed var(--mint);margin-left:13px;margin-bottom:2px}
+.remove-btn{padding:6px 12px;border:1.5px solid #d8e0ea;border-radius:var(--r-sm);font-size:11px;font-weight:700;color:var(--muted);background:var(--white);cursor:pointer;min-height:36px;white-space:nowrap}
+.rs-box{background:var(--white);border-radius:var(--r-sm);padding:1rem;margin-bottom:.875rem;box-shadow:var(--sh);border:1px solid #eef2f7}
+.rs-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f0f4f8;font-size:13px}
+.rs-row:last-child{border-bottom:none}
+.rs-label{color:var(--muted);font-weight:600}.rs-val{font-weight:800;color:var(--navy)}
+.gen-btn{width:100%;padding:13px;background:var(--mint);color:#fff;border:none;border-radius:var(--r-sm);font-size:14px;font-weight:800;cursor:pointer;margin-bottom:.75rem;min-height:46px}
+.itin-box{background:var(--white);border-radius:var(--r-sm);padding:1rem;display:none;box-shadow:var(--sh);border:1px solid #eef2f7}
+.itin-day{margin-bottom:.875rem}
+.itin-day-lbl{font-size:10px;font-weight:800;color:var(--mint);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.35rem}
+.itin-item{font-size:12px;color:var(--muted);padding:4px 0;border-bottom:1px solid #f0f4f8;line-height:1.45}
+.itin-item:last-child{border-bottom:none}
+.itin-item strong{color:var(--navy);font-weight:700}
+.tip-box{background:var(--mint-l);border:1.5px solid #a0e8cf;border-radius:var(--r-sm);padding:.875rem;margin-top:.875rem}
+.tip-title{font-size:12px;font-weight:800;color:var(--mint-txt);margin-bottom:.3rem}
+.tip-body{font-size:12px;color:#1a5940;line-height:1.6}
+
+/* ── PARTNER ── */
+.partner-wrap{padding:1.25rem .75rem}
+.partner-hero{border-radius:var(--r);overflow:hidden;position:relative;height:130px;margin-bottom:1.5rem;box-shadow:var(--sh);background:linear-gradient(135deg,#064e3b,#00a07a)}
+.partner-hero img{width:100%;height:100%;object-fit:cover}
+.partner-hero-ov{position:absolute;inset:0;background:linear-gradient(120deg,rgba(0,40,20,.72),rgba(0,160,122,.45));display:flex;flex-direction:column;justify-content:center;padding:1.1rem 1.25rem}
+.partner-hero h2{font-size:clamp(16px,3.5vw,20px);font-weight:900;color:#fff}
+.partner-hero p{font-size:12px;color:rgba(255,255,255,.85);margin-top:3px}
+.form-stack{display:flex;flex-direction:column;gap:.875rem}
+.form-row2{display:grid;grid-template-columns:1fr 1fr;gap:.875rem}
+.fg{display:flex;flex-direction:column;gap:4px}
+.flabel{font-size:11px;font-weight:800;color:var(--muted)}
+.fg input,.fg select,.fg textarea{padding:11px 13px;border:1.5px solid #d8e0ea;border-radius:var(--r-sm);font-size:14px;color:var(--text);background:var(--white);outline:none;font-family:inherit;font-weight:600;min-height:46px;width:100%}
+.fg textarea{resize:vertical;min-height:80px}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--mint)}
+.form-sec{font-size:12px;font-weight:900;color:var(--navy);padding-bottom:.4rem;border-bottom:2px solid #eef2f7;margin-top:.25rem}
+.cb-group{display:flex;flex-wrap:wrap;gap:7px}
+.cb-item{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted);cursor:pointer}
+.cb-item input{accent-color:var(--mint);width:14px;height:14px}
+.radio-group{display:flex;flex-direction:column;gap:6px}
+.radio-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text);cursor:pointer;padding:.625rem .875rem;border-radius:var(--r-sm);border:1.5px solid #d8e0ea;font-weight:600}
+.radio-item:has(input:checked){border-color:var(--mint);background:var(--mint-l)}
+.radio-item input{accent-color:var(--mint);width:15px;height:15px}
+.submit-btn{width:100%;padding:14px;background:var(--mint);color:#fff;border:none;border-radius:var(--r-sm);font-size:15px;font-weight:800;cursor:pointer;margin-top:1.25rem;min-height:50px}
+.success-card{background:var(--mint-l);border:1.5px solid #a0e8cf;border-radius:var(--r);padding:2rem;text-align:center;display:none}
+.success-card.show{display:block}
+.success-icon{width:50px;height:50px;background:var(--mint);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;font-size:20px;color:#fff}
+.success-card h3{font-size:17px;font-weight:900;color:var(--navy);margin-bottom:.35rem}
+.success-card p{font-size:13px;color:var(--muted);line-height:1.6}
+
+.skip-link{position:absolute;top:-60px;left:.75rem;background:var(--mint);color:#fff;padding:8px 16px;border-radius:8px;font-weight:800;font-size:13px;z-index:999;text-decoration:none;transition:top .15s}
+.skip-link:focus{top:8px}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<h2 class="sr-only">Jalan-Jalan Thailand — Halal travel platform for Southern Thailand</h2>
+
+<nav class="nav">
+  <div class="brand">
+    <div class="brand-mark">J</div>
+    <div class="brand-name">Jalan-Jalan <span>TH</span></div>
+  </div>
+  <div class="nav-tabs" role="tablist">
+    <button class="nav-tab active" onclick="showTab('discover')" id="tab-discover">Discover</button>
+    <button class="nav-tab" onclick="showTab('search')" id="tab-search">Search</button>
+    <button class="nav-tab" onclick="showTab('route')" id="tab-route">Route</button>
+    <button class="nav-tab" onclick="showTab('partner')" id="tab-partner">Partner</button>
+  </div>
+  <div class="lang-wrap">
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('bm')">BM</button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ═══ DISCOVER ═══ -->
+<div class="page active" id="page-discover">
+
+  <div class="hero">
+    <div id="hero-slides">
+      <div class="slide active">
+        <img class="slide-img" src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Krabi Thailand limestone cliffs" loading="eager" onerror="this.style.display='none'">
+        <div class="slide-ov"></div>
+      </div>
+      <div class="slide">
+        <img class="slide-img" src="https://images.pexels.com/photos/1451410/pexels-photo-1451410.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Southern Thailand island paradise" loading="lazy" onerror="this.style.display='none'">
+        <div class="slide-ov"></div>
+      </div>
+      <div class="slide">
+        <img class="slide-img" src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Langkawi Malaysia tropical island" loading="lazy" onerror="this.style.display='none'">
+        <div class="slide-ov"></div>
+      </div>
+      <div class="slide">
+        <img class="slide-img" src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Wellness spa retreat Thailand" loading="lazy" onerror="this.style.display='none'">
+        <div class="slide-ov"></div>
+      </div>
+    </div>
+    <div class="hero-cap">
+      <div class="cap active">Krabi — Limestone Karst Coast</div>
+      <div class="cap">Southern Thailand — Island Paradise</div>
+      <div class="cap">Langkawi — Geopark Gateway</div>
+      <div class="cap">Southern Thailand — Wellness & Nature</div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" id="d-badge">Halal Verified · Muslim-Friendly Travel</div>
+      <h1 class="hero-h1" id="d-h1">Beyond Hatyai.<br>Discover the real south.</h1>
+      <p class="hero-sub" id="d-p">Your trusted halal guide — eco-adventures, wellness, medical tourism and living heritage.</p>
+      <div class="hero-search">
+        <label for="hero-input" class="sr-only">Search destinations</label>
+        <input id="hero-input" type="search" placeholder="Where do you want to go?" oninput="syncHero(event)">
+        <button class="hero-sbtn" onclick="doHeroSearch()" id="d-sbtn">Search</button>
+      </div>
+      <div class="hero-pills" id="d-hero-pills"></div>
+    </div>
+    <div class="hero-dots" id="hero-dots"></div>
+  </div>
+
+  <div class="trust-bar" id="d-trust"></div>
+  <div class="values-strip" id="d-values"></div>
+
+  <!-- GEOPARK -->
+  <div class="section">
+    <div class="sec-hdr">
+      <div>
+        <div class="sec-lbl" id="d-geo-lbl">Core Partnership</div>
+        <div class="sec-title" id="d-geo-title">Langkawi ↔ Satun Geopark</div>
+        <div class="sec-sub" id="d-geo-sub">Two UNESCO Geoparks. One seamless halal journey.</div>
+      </div>
+    </div>
+    <div class="geopark-card">
+      <div class="geo-side">
+        <img src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Langkawi Malaysia UNESCO Geopark" loading="lazy" onerror="this.style.display='none'">
+        <div class="geo-ov">
+          <div class="geo-flag">🇲🇾</div>
+          <div class="geo-name" id="d-lk-name">Langkawi</div>
+          <div class="geo-sub" id="d-lk-sub">UNESCO Geopark · Malaysia</div>
+          <div class="geo-ferry" id="d-lk-ferry">Kuah Jetty</div>
+        </div>
+      </div>
+      <div class="geo-mid">
+        <div class="geo-arrow">⇄</div>
+        <div class="geo-mid-txt" id="d-ferry-txt">Ferry<br>~45 min</div>
+        <div class="geo-pill">UNESCO</div>
+      </div>
+      <div class="geo-side">
+        <img src="https://images.pexels.com/photos/1451410/pexels-photo-1451410.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Satun Thailand UNESCO Geopark islands" loading="lazy" onerror="this.style.display='none'">
+        <div class="geo-ov">
+          <div class="geo-flag">🇹🇭</div>
+          <div class="geo-name" id="d-st-name">Satun</div>
+          <div class="geo-sub" id="d-st-sub">UNESCO Geopark · Thailand</div>
+          <div class="geo-ferry" id="d-st-ferry">Tammalang Pier</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAHSURI -->
+  <div class="mahsuri-wrap">
+    <div class="mahsuri-hero">
+      <img src="https://images.pexels.com/photos/1583417/pexels-photo-1583417.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Mahsuri Heritage Trail" loading="lazy" onerror="this.style.display='none'">
+      <div class="mahsuri-ov"></div>
+      <div class="mahsuri-hcontent">
+        <div class="mh-eyebrow" id="mh-eyebrow">Legend Travel Route</div>
+        <div class="mh-title" id="mh-title">The Mahsuri Trail<br>Langkawi → Phuket</div>
+        <div class="mh-sub" id="mh-sub">Follow the legendary footsteps of Mahsuri — a 200-year journey of love, injustice and a curse that shaped a kingdom.</div>
+      </div>
+    </div>
+    <div class="mahsuri-body">
+      <p class="mahsuri-story" id="mh-story">In the early 1800s, Mahsuri — daughter of Phuket Malay parents who migrated to Langkawi — was falsely accused of adultery while her warrior husband was away at war. Despite bleeding white blood as proof of her innocence, she was executed. With her dying breath, she cursed Langkawi with seven generations of misfortune. Her family fled back to Siam. In 2000, her seventh-generation descendant Wan Aishah was found in Kampung Kemala, Phuket — and when she returned to Mahsuri's tomb, Langkawi finally began to prosper.</p>
+      <div class="route-label" id="mh-route-label">Follow the trail — 5 stops across the Malay-Thai corridor</div>
+      <div class="mahsuri-route" id="mh-route"></div>
+      <div class="mahsuri-cta-row">
+        <button class="mahsuri-cta" onclick="showTab('route')" id="mh-cta">Plan this journey</button>
+        <span class="mahsuri-note" id="mh-note">Est. 7 days · Halal-certified throughout</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPONSOR -->
+  <div class="sponsor-banner">
+    <div class="sp-inner">
+      <div>
+        <div class="sp-label" id="sp-label">Partner spotlight</div>
+        <div class="sp-text" id="sp-text">Reach 50,000+ Malaysian halal travellers</div>
+        <div class="sp-sub" id="sp-sub">Premium listing & banner placements available</div>
+      </div>
+      <div class="sp-slots">
+        <div class="sp-slot">Your<br>Logo</div>
+        <div class="sp-slot">Your<br>Logo</div>
+      </div>
+      <button class="sp-btn" onclick="showTab('partner')" id="sp-cta">Advertise</button>
+    </div>
+  </div>
+
+  <!-- REGIONS -->
+  <div class="section">
+    <div class="sec-hdr">
+      <div>
+        <div class="sec-lbl" id="d-reg-lbl">All Destinations</div>
+        <div class="sec-title" id="d-reg-title">20 best places to explore</div>
+        <div class="sec-sub" id="d-reg-sub">All 14 southern provinces · Bangkok & Chiang Mai</div>
+      </div>
+      <button class="ghost-btn" onclick="showTab('search')" id="d-view-all">View all</button>
+    </div>
+    <div class="region-grid" id="d-region-grid"></div>
+    <div class="rows-extra" id="rows-extra"></div>
+    <div class="show-more-wrap">
+      <button class="show-more-btn" onclick="toggleRows()" id="show-more-btn">Show more ▾</button>
+    </div>
+  </div>
+
+  <!-- LISTINGS PANEL -->
+  <div class="listings-panel" id="d-listings-panel">
+    <div class="lp-hdr">
+      <div class="lp-title" id="d-lp-title">Listings</div>
+      <button class="lp-close" onclick="closeDListings()" id="d-close-lp">Close ✕</button>
+    </div>
+    <div class="cat-row" id="d-cat-filters"></div>
+    <div class="lp-list" id="d-listing-items"></div>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="video-section">
+    <div class="sec-hdr">
+      <div>
+        <div class="sec-lbl" id="d-vid-lbl">Watch & Explore</div>
+        <div class="sec-title" id="d-vid-title">Travel reels & vlogs</div>
+      </div>
+    </div>
+    <div class="video-grid" id="d-video-grid"></div>
+  </div>
+
+  <!-- BLOG -->
+  <div class="blog-section">
+    <div class="sec-hdr">
+      <div>
+        <div class="sec-lbl" id="d-blog-lbl">Guest Writers</div>
+        <div class="sec-title" id="d-blog-title">Stories from the road</div>
+      </div>
+      <button class="ghost-btn" id="d-blog-all">Read all</button>
+    </div>
+    <div class="blog-grid" id="d-blog-grid"></div>
+  </div>
+
+  <!-- ECO -->
+  <div class="eco-strip" id="d-eco-strip"></div>
+
+  <!-- ACEH -->
+  <div class="aceh-strip">
+    <div class="aceh-dot"></div>
+    <span style="font-size:12px;color:var(--hint);font-weight:600" id="d-aceh">Expanding soon — Aceh corridor (Indonesia) · Full Bahasa-speaking travel belt coming soon</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Jalan-Jalan Thailand</div>
+        <div class="footer-tagline" id="d-footer-tagline">Where halal travel meets authentic adventure — Southern Thailand's most trusted Muslim-friendly guide.</div>
+        <div class="footer-seo" id="d-footer-seo">Halal hotels Krabi · Halal food Hatyai · Muslim-friendly Satun · Eco-tourism · Medical tourism Thailand · Mahsuri Heritage Trail</div>
+      </div>
+      <div>
+        <div class="footer-col-title" id="d-fl1">Southern Provinces</div>
+        <div id="d-f-south"></div>
+      </div>
+      <div>
+        <div class="footer-col-title" id="d-fl2">Travel Resources</div>
+        <div id="d-f-res"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" id="d-footer-copy">© 2025 Jalan-Jalan Thailand · Halal travel, responsibly curated.</div>
+      <div class="footer-tags" id="d-footer-tags"></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ═══ SEARCH ═══ -->
+<div class="page" id="page-search">
+  <div class="search-wrap">
+    <div class="sec-title" id="s-title" style="margin-bottom:.25rem">Search listings</div>
+    <div class="sec-sub" id="s-sub" style="margin-bottom:1rem">Halal food, hotels, eco-tours, medical & wellness</div>
+    <div class="search-row">
+      <label for="s-input" class="sr-only">Search</label>
+      <input type="search" id="s-input" placeholder="Name, region, keyword..." oninput="doSearch()">
+      <label for="s-region" class="sr-only">Region</label>
+      <select id="s-region" onchange="doSearch()"></select>
+    </div>
+    <div class="filter-row" id="s-cat-filters"></div>
+    <div class="result-count" id="s-count" aria-live="polite"></div>
+    <div id="s-results"></div>
+  </div>
+</div>
+
+<!-- ═══ ROUTE ═══ -->
+<div class="page" id="page-route">
+  <div class="route-wrap">
+    <div class="sec-title" id="r-title" style="margin-bottom:.25rem">Plan your route</div>
+    <div class="sec-sub" id="r-sub" style="margin-bottom:1.1rem">Multi-stop halal journey from Langkawi into Southern Thailand</div>
+    <div style="font-size:12px;font-weight:700;color:var(--muted);margin-bottom:.4rem" id="r-add-label">Add a destination</div>
+    <div class="add-row">
+      <label for="r-sel" class="sr-only">Select region</label>
+      <select id="r-sel"></select>
+      <button class="add-stop-btn" onclick="addStop()" id="r-add-btn">+ Add</button>
+    </div>
+    <div id="route-steps"></div>
+    <div id="route-summary-wrap" style="display:none">
+      <div class="rs-box" id="route-summary"></div>
+      <button class="gen-btn" onclick="genItin()" id="r-gen-btn">Generate itinerary</button>
+      <div class="itin-box" id="itin-box"></div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-title" id="r-tip-title">Recommended starting route</div>
+      <div class="tip-body" id="r-tip-body">Langkawi → Satun (ferry) → Trang → Krabi → Pattani. UNESCO Geopark, coastal eco-zones, deep Malay heritage — perfect 5-day halal road trip.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PARTNER ═══ -->
+<div class="page" id="page-partner">
+  <div class="partner-wrap">
+    <div class="partner-hero">
+      <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Join as halal tourism partner" loading="lazy" onerror="this.style.display='none'">
+      <div class="partner-hero-ov">
+        <h2 id="p-title">Join as a tourism partner</h2>
+        <p id="p-sub">List your business · reach thousands of Malaysian halal travellers</p>
+      </div>
+    </div>
+    <div id="partner-form">
+      <div class="form-stack">
+        <div class="form-sec" id="pf-s1">Business information</div>
+        <div class="fg"><label class="flabel" id="pf-bname-l">Business name *</label><input type="text" id="pf-bname" placeholder="e.g. Restoran Pak Soh Satun" autocomplete="organization"></div>
+        <div class="form-row2">
+          <div class="fg"><label class="flabel" id="pf-cat-l">Category *</label><select id="pf-cat"><option value="">Select...</option><option>Restaurant / Halal Food</option><option>Hotel / Lodging</option><option>Eco-tour / Activity</option><option>Cultural Experience</option><option>Medical Tourism</option><option>Wellness & Spa</option><option>Travel Package</option></select></div>
+          <div class="fg"><label class="flabel" id="pf-region-l">Region *</label><select id="pf-region-sel"><option value="">Select...</option></select></div>
+        </div>
+        <div class="fg"><label class="flabel" id="pf-desc-l">Brief description</label><textarea id="pf-desc" placeholder="What makes your business special for Muslim travellers?"></textarea></div>
+        <div class="form-sec" id="pf-s2">Halal certification</div>
+        <div class="fg">
+          <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="halal" value="cert"> <span id="pf-h1">Certified (JAKIM / Thai equivalent)</span></label>
+            <label class="radio-item"><input type="radio" name="halal" value="muslim"> <span id="pf-h2">Muslim-owned, no pork / alcohol</span></label>
+            <label class="radio-item"><input type="radio" name="halal" value="friendly"> <span id="pf-h3">Halal-friendly (separate utensils)</span></label>
+          </div>
+        </div>
+        <div class="form-sec" id="pf-s3">Contact details</div>
+        <div class="form-row2">
+          <div class="fg"><label class="flabel" id="pf-contact-l">Contact person *</label><input type="text" id="pf-contact" autocomplete="name" placeholder="Full name"></div>
+          <div class="fg"><label class="flabel" id="pf-phone-l">WhatsApp *</label><input type="tel" id="pf-phone" autocomplete="tel" placeholder="+60 / +66"></div>
+        </div>
+        <div class="fg"><label class="flabel" id="pf-email-l">Email address</label><input type="email" id="pf-email" autocomplete="email" placeholder="your@email.com"></div>
+        <div class="fg"><label class="flabel" id="pf-base-l">Based in</label><div class="cb-group" id="pf-based"></div></div>
+        <div class="form-sec" id="pf-s4">Services & sustainability</div>
+        <div class="fg"><label class="flabel" id="pf-svc-l">Services offered</label><div class="cb-group" id="pf-services"></div></div>
+        <div class="fg"><label class="flabel" id="pf-eco-l">Eco / sustainability practices</label><div class="cb-group" id="pf-eco"></div></div>
+        <div class="fg"><label class="flabel" id="pf-note-l">Anything else to share?</label><textarea id="pf-note" placeholder="Special packages, group rates, wellness retreats..."></textarea></div>
+      </div>
+      <button class="submit-btn" onclick="submitPartner()" id="pf-submit">Submit application</button>
+    </div>
+    <div class="success-card" id="partner-ok">
+      <div class="success-icon">✓</div>
+      <h3 id="ps-title">Application received!</h3>
+      <p id="ps-msg">Our team will review and reach out via WhatsApp within 3–5 working days.</p>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script>
+/* ── ALL IMAGES: Pexels CDN only — confirmed IDs, no auth needed ── */
+const PX=(id,w)=>`https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w||460}`;
+
+const PHOTOS={
+  langkawi:    PX(3155666),   /* tropical island beach Malaysia */
+  satun:       PX(1451410),   /* turquoise Andaman island */
+  trang:       PX(1450358),   /* tropical coast green sea */
+  krabi:       PX(1450353),   /* limestone cliff beach */
+  pattani:     PX(3881125),   /* mosque Islamic architecture */
+  hatyai:      PX(3225517),   /* city night market street */
+  songkhla:    PX(2166553),   /* lake scenic town */
+  narathiwat:  PX(3622613),   /* coastal fishing Malay */
+  yala:        PX(2291393),   /* southern province nature */
+  phatthalung: PX(417074),    /* freshwater lake nature */
+  nakhon:      PX(460621),    /* jungle waterfall rainforest */
+  phuket:      PX(17422289),  /* Koh Khai Nai aerial Phuket */
+  phangnga:    PX(1001682),   /* sea cave limestone bay */
+  surat:       PX(1108099),   /* rainforest river green */
+  ranong:      PX(3621532),   /* mangrove green river */
+  chumphon:    PX(1076764),   /* diving coral reef turquoise */
+  bangkok:     PX(1031172),   /* Bangkok skyline night */
+  chiangmai:   PX(3696394),   /* Chiang Mai temple mountain */
+  kanchanaburi:PX(457418),    /* river bridge western Thailand */
+  ayutthaya:   PX(1007426),   /* ancient ruins temple */
+  kohlanta:    PX(1591361)    /* peaceful island beach */
+};
+
+const LT={
+  food:    PX(1640777,140),
+  hotel:   PX(271624,140),
+  activity:PX(1430676,140),
+  eco:     PX(3621532,140),
+  package: PX(1008155,140),
+  medical: PX(236380,140),
+  wellness:PX(3757942,140)
+};
+
+const MAHSURI_STOPS=[
+  {id:"langkawi",name:"Langkawi",detail:{en:"Makam Mahsuri — tomb of the legendary princess",        bm:"Makam Mahsuri — pusara puteri legenda"},                                                                img:PX(3155666,300)},
+  {id:"satun",   name:"Satun",   detail:{en:"Tammalang Pier — where her family crossed to Siam",       bm:"Jeti Tammalang — di mana keluarganya menyeberang ke Siam"},                                          img:PX(1451410,300)},
+  {id:"trang",   name:"Trang",   detail:{en:"Malay Muslim heartland on the journey north",              bm:"Kawasan jantung Muslim Melayu dalam perjalanan ke utara"},                                            img:PX(1450358,300)},
+  {id:"krabi",   name:"Krabi",   detail:{en:"Koh Lanta — Muslim-majority island her descendants passed through",bm:"Koh Lanta — pulau majoriti Muslim yang dilalui keturunannya"},                              img:PX(1450353,300)},
+  {id:"phuket",  name:"Phuket",  detail:{en:"Kampung Kemala — where Wan Aishah, 7th descendant, was found in 2000",bm:"Kampung Kemala — tempat Wan Aishah, keturunan ke-7, dijumpai pada 2000"},               img:PX(17422289,300)}
+];
+
+const VIDEOS=[
+  {type:"YouTube", orient:"landscape",thumb:PX(1450353,400),channel:"HalalTravelKL",   title:{en:"Krabi on RM500 — A Malaysian's halal island guide",    bm:"Krabi dengan RM500 — Panduan pulau halal"},meta:"1.2M views · YouTube"},
+  {type:"TikTok",  orient:"portrait", thumb:PX(1451410,400),channel:"@satunvibes",     title:{en:"Satun islands reel — hidden paradise",                 bm:"Reel pulau Satun — syurga tersembunyi"},   meta:"890K views · TikTok"},
+  {type:"Instagram",orient:"portrait",thumb:PX(3757942,400),channel:"@halalwellness.th",title:{en:"Wellness retreat Krabi — 3-day halal spa",            bm:"Retret kesihatan Krabi — spa halal 3 hari"},meta:"560K views · Instagram Reels"},
+  {type:"YouTube", orient:"landscape",thumb:PX(3155666,400),channel:"NomadMuslim",     title:{en:"Mahsuri Trail — following 200 years of legend",        bm:"Laluan Mahsuri — 200 tahun legenda"},       meta:"340K views · YouTube"}
+];
+
+const BLOGS=[
+  {cat:"eco",    catLabel:{en:"Eco-travel",bm:"Eko"},  catCls:"bc-eco",    img:PX(1108099,400),author:"Afiqah Zainol",    date:{en:"Apr 2025",bm:"Apr 2025"},initials:"AZ",bg:"#d0f5eb",fc:"#004d38",title:{en:"3 days in Trang — mangroves, halal food & a cave that stole my heart",bm:"3 hari di Trang — bakau, makanan halal & gua yang mencuri hati saya"},excerpt:{en:"I didn't plan to fall in love with Trang. Arriving by overnight train, I had low expectations — but the emerald cave changed everything.",bm:"Saya tidak merancang untuk jatuh cinta dengan Trang. Namun gua zamrud itu mengubah segalanya."},read:{en:"7 min",bm:"7 minit"}},
+  {cat:"culture",catLabel:{en:"Heritage",bm:"Warisan"},catCls:"bc-culture",img:PX(3155666,400),author:"Ustaz Hafizi Rahman",date:{en:"Mar 2025",bm:"Mac 2025"},initials:"HR",bg:"#f0ebff",fc:"#5b21b6",title:{en:"Walking the Mahsuri Trail — what the legend teaches us about forgiveness",bm:"Menelusuri Laluan Mahsuri — apa yang legenda ajar tentang kemaafan"},excerpt:{en:"Seven generations of suffering, a curse lifted by a simple act of return. I traced Mahsuri's journey from Langkawi to Phuket.",bm:"Tujuh generasi penderitaan, kutukan diangkat dengan satu tindakan kembali. Saya meneliti perjalanan Mahsuri."},read:{en:"12 min",bm:"12 minit"}},
+  {cat:"medical",catLabel:{en:"Medical",bm:"Perubatan"},catCls:"bc-medical",img:PX(236380,400),  author:"Dr Norzahra Malik",date:{en:"Feb 2025",bm:"Feb 2025"},initials:"NM",bg:"#dbeafe",fc:"#1e40af",title:{en:"Bangkok Hospital Phuket — my honest review as a Malaysian patient",bm:"Bangkok Hospital Phuket — ulasan jujur saya sebagai pesakit Malaysia"},excerpt:{en:"After my knee surgery in Phuket, I spent a week recovering in a halal-friendly suite. Here's what the brochures don't tell you.",bm:"Selepas pembedahan lutut di Phuket, saya habiskan seminggu untuk pulih."},read:{en:"9 min",bm:"9 minit"}},
+  {cat:"food",   catLabel:{en:"Halal Food",bm:"Makanan"},catCls:"bc-food",  img:PX(1640777,400),author:"Ain Syafiqah",     date:{en:"Jan 2025",bm:"Jan 2025"},initials:"AS",bg:"#ffe0e0",fc:"#7a0000",title:{en:"The ultimate halal food guide to Hatyai — 18 places in 48 hours",bm:"Panduan makanan halal Hatyai — 18 tempat dalam 48 jam"},excerpt:{en:"Hatyai is overrated, they said. But nobody talks about the Muslim quarter near the market — where the real food scene lives.",bm:"Hatyai terlalu popular, kata mereka. Tetapi tidak ramai yang tahu tentang kawasan Muslim berhampiran pasar."},read:{en:"11 min",bm:"11 minit"}}
+];
+
+const CAT_MAP={food:["Food","Makanan"],hotel:["Stay","Penginapan"],activity:["Activity","Aktiviti"],eco:["Eco-tour","Eko-tour"],medical:["Medical","Perubatan"],wellness:["Wellness","Kesihatan"],package:["Package","Pakej"]};
+const LC={food:"lcat-food",hotel:"lcat-hotel",activity:"lcat-activity",eco:"lcat-eco",medical:"lcat-medical",wellness:"lcat-wellness",package:"lcat-package"};
+const bmap={anc:`<span class="bdg b-anc">Geopark ★</span>`,pop:`<span class="bdg b-pop">Popular</span>`,eco:`<span class="bdg b-eco">Eco</span>`,cul:`<span class="bdg b-cul">Culture</span>`,med:`<span class="bdg b-med">Medical</span>`,soon:`<span class="bdg b-soon">Coming Soon</span>`};
+
+const REGIONS=[
+  {id:"satun",name:"Satun",prov:"Satun Province",tagline:{en:"Geopark gateway & island paradise",bm:"Pintu Geopark & syurga pulau"},tags:["Geopark","Islands","Eco"],badges:["anc","eco"],nights:2,active:true,
+   listings:[{t:"food",name:"Restoran Pak Soh Satun",desc:{en:"Authentic halal seafood on the Andaman coast",bm:"Makanan laut halal tulen di pesisir Andaman"}},{t:"hotel",name:"Satun Wangmai Hotel",desc:{en:"Central, Muslim-friendly, halal breakfast",bm:"Lokasi tengah, mesra Muslim, sarapan halal"}},{t:"eco",name:"Mu Ko Phetra Eco-Snorkel",desc:{en:"Low-impact snorkelling in pristine Andaman reefs",bm:"Snorkeling impak rendah di terumbu Andaman"}},{t:"wellness",name:"Satun Wellness Retreat",desc:{en:"Thai-Malay herbal therapies, halal-certified",bm:"Terapi herba Thai-Melayu, bertauliah halal"}}]},
+  {id:"trang",name:"Trang",prov:"Trang Province",tagline:{en:"Caves, waterfalls & mangrove eco-trails",bm:"Gua, air terjun & laluan eko bakau"},tags:["Caves","Eco","Nature"],badges:["eco"],nights:1,active:true,
+   listings:[{t:"food",name:"Trang Dim Sum Halal",desc:{en:"Famous local halal breakfast — a Trang institution",bm:"Sarapan halal tempatan terkenal"}},{t:"hotel",name:"Rua Rasada Hotel",desc:{en:"Riverside setting close to the night market",bm:"Suasana tepi sungai dekat pasar malam"}},{t:"eco",name:"Trang Mangrove Kayak Tour",desc:{en:"Guided kayak through protected mangroves",bm:"Kayak berpandu melalui bakau yang dilindungi"}}]},
+  {id:"krabi",name:"Krabi",prov:"Krabi Province",tagline:{en:"Limestone karst, turquoise sea & halal gems",bm:"Karst batu kapur, laut pirus & permata halal"},tags:["Beaches","Climbing","Islands"],badges:["eco"],nights:2,active:true,
+   listings:[{t:"food",name:"Mama's Kitchen Krabi",desc:{en:"Halal tom yam and southern curries near Ao Nang",bm:"Tom yam halal dan kari selatan berhampiran Ao Nang"}},{t:"hotel",name:"Railay Princess Resort",desc:{en:"Beachfront bungalows, boat access only",bm:"Bungalow tepi pantai, hanya akses bot"}},{t:"eco",name:"Kayak Sea Cave Tour",desc:{en:"Low-impact kayak through limestone sea caves",bm:"Kayak impak rendah melalui gua laut batu kapur"}},{t:"medical",name:"Krabi International Medical",desc:{en:"Malay-speaking international hospital",bm:"Hospital antarabangsa berbahasa Melayu"}}]},
+  {id:"pattani",name:"Pattani",prov:"Pattani Province",tagline:{en:"Deep Malay heritage & sacred mosques",bm:"Warisan Melayu dalam & masjid bersejarah"},tags:["Heritage","Mosque","Culture"],badges:["cul"],nights:1,active:true,
+   listings:[{t:"food",name:"Pasar Nithit Seafood Row",desc:{en:"Halal seafood at Pattani night market",bm:"Makanan laut halal di pasar malam Pattani"}},{t:"hotel",name:"CS Pattani Hotel",desc:{en:"Business-class, prayer room, halal dining",bm:"Kelas perniagaan, surau, makan halal"}},{t:"activity",name:"Krue Se Mosque Heritage Walk",desc:{en:"16th-century mosque, oldest in Southeast Asia",bm:"Masjid abad ke-16, tertua di Asia Tenggara"}}]},
+  {id:"hatyai",name:"Hatyai",prov:"Songkhla Province",tagline:{en:"Southern hub — transit, food & medical",bm:"Pusat selatan — transit, makanan & perubatan"},tags:["Medical","Shopping","Transit"],badges:["pop","med"],nights:1,active:true,
+   listings:[{t:"food",name:"Night market halal row",desc:{en:"Famous halal strip near Lee Gardens Plaza",bm:"Deretan makanan halal berhampiran Lee Gardens"}},{t:"hotel",name:"Lee Gardens Plaza Hotel",desc:{en:"Central, connected to all major transport",bm:"Sentral, berhubung dengan semua pengangkutan"}},{t:"medical",name:"Bangkok Hospital Hatyai",desc:{en:"Leading hospital with Malay-speaking staff",bm:"Hospital terkemuka berbahasa Melayu"}}]},
+  {id:"songkhla",name:"Songkhla",prov:"Songkhla Province",tagline:{en:"Old town, twin lakes & Malay history",bm:"Pekan lama, tasik kembar & sejarah Melayu"},tags:["Old Town","Lakes","History"],badges:["cul"],nights:1,active:true,
+   listings:[{t:"food",name:"Muslim Songkhla Eateries",desc:{en:"Halal restaurants in historic old town",bm:"Restoran halal di pekan lama bersejarah"}},{t:"activity",name:"Songkhla National Museum",desc:{en:"Thai-Malay history showcase",bm:"Pameran sejarah Thai-Melayu"}}]},
+  {id:"narathiwat",name:"Narathiwat",prov:"Narathiwat Province",tagline:{en:"Malay culture at Thailand's southernmost tip",bm:"Budaya Melayu di hujung selatan Thailand"},tags:["Malay","Mosque","Fishing"],badges:["cul"],nights:1,active:true,
+   listings:[{t:"food",name:"Narathiwat Halal Seafood Market",desc:{en:"Fresh catches at the Muslim seafood market",bm:"Tangkapan segar di pasaran makanan laut Muslim"}},{t:"activity",name:"Narathiwat Central Mosque",desc:{en:"Beautiful landmark of Islamic architecture",bm:"Mercu tanda seni bina Islam yang indah"}}]},
+  {id:"yala",name:"Yala",prov:"Yala Province",tagline:{en:"Deep south heartland & serene countryside",bm:"Jantung selatan dalam & kawasan luar bandar"},tags:["Countryside","Malay","Nature"],badges:["cul"],nights:1,active:true,
+   listings:[{t:"food",name:"Yala Halal Street Market",desc:{en:"Local Malay-Thai halal street food",bm:"Makanan jalanan halal Melayu-Thai tempatan"}},{t:"activity",name:"Yala Central Mosque",desc:{en:"One of the most beautiful mosques in the south",bm:"Salah satu masjid paling indah di selatan"}}]},
+  {id:"phatthalung",name:"Phatthalung",prov:"Phatthalung Province",tagline:{en:"Freshwater lakes, caves & unspoilt nature",bm:"Tasik air tawar, gua & alam tidak tercemar"},tags:["Lakes","Nature","Eco"],badges:["eco"],nights:1,active:true,
+   listings:[{t:"eco",name:"Thale Noi Waterbird Tour",desc:{en:"Asia's largest waterbird sanctuary by boat",bm:"Taman burung air terbesar Asia melalui bot"}},{t:"wellness",name:"Phatthalung Nature Wellness",desc:{en:"Lakeside wellness retreat amid birdlife",bm:"Retret kesihatan tepi tasik"}}]},
+  {id:"nakhon",name:"Nakhon Si Thammarat",prov:"Nakhon Si Thammarat Province",tagline:{en:"Ancient kingdom, highland eco & heritage",bm:"Kerajaan purba, eko tanah tinggi & warisan"},tags:["History","Eco","Culture"],badges:["cul","eco"],nights:1,active:true,
+   listings:[{t:"eco",name:"Khao Luang National Park Hike",desc:{en:"Trek to Southern Thailand's highest peak",bm:"Mendaki puncak tertinggi selatan Thailand"}},{t:"medical",name:"Maharaj Nakhon Hospital",desc:{en:"Major regional hospital, English-speaking staff",bm:"Hospital wilayah utama"}}]},
+  {id:"phuket",name:"Phuket",prov:"Phuket Province",tagline:{en:"World-famous island, halal food & top hospitals",bm:"Pulau tersohor, makanan halal & hospital terbaik"},tags:["Beach","Medical","Wellness"],badges:["pop","med"],nights:2,active:true,
+   listings:[{t:"food",name:"Bangla Halal Hub",desc:{en:"Dedicated halal food zone in Phuket town",bm:"Zon makanan halal khas di bandar Phuket"}},{t:"medical",name:"Bangkok Hospital Phuket",desc:{en:"JCI-accredited, internationally renowned",bm:"Berlesen JCI, terkenal antarabangsa"}},{t:"wellness",name:"Phuket Wellness Detox Retreat",desc:{en:"Halal-certified detox program by the sea",bm:"Program detox bertauliah halal di tepi laut"}}]},
+  {id:"phangnga",name:"Phang Nga",prov:"Phang Nga Province",tagline:{en:"Sea caves, mangroves & James Bond Island",bm:"Gua laut, bakau & Pulau James Bond"},tags:["Sea Caves","Kayak","Islands"],badges:["eco"],nights:1,active:true,
+   listings:[{t:"eco",name:"Phang Nga Bay Mangrove Kayak",desc:{en:"Guided eco-kayak through mangroves",bm:"Kayak eko berpandu melalui bakau"}},{t:"food",name:"Ko Yao Noi Halal Seafood",desc:{en:"Fresh catch on a Muslim-majority island",bm:"Tangkapan segar di pulau majoriti Muslim"}}]},
+  {id:"surat",name:"Surat Thani",prov:"Surat Thani Province",tagline:{en:"Gateway to Koh Samui, rainforest & rivers",bm:"Pintu masuk Koh Samui, hutan hujan & sungai"},tags:["Islands","Rainforest","River"],badges:["eco"],nights:1,active:true,
+   listings:[{t:"eco",name:"Khao Sok Night Safari",desc:{en:"Eco-night safari in Asia's oldest rainforest",bm:"Safari malam eko di hutan hujan tertua Asia"}},{t:"food",name:"Surat Thani Night Market Halal",desc:{en:"Vibrant halal stalls at the famous market",bm:"Gerai halal yang meriah di pasar malam terkenal"}}]},
+  {id:"ranong",name:"Ranong",prov:"Ranong Province",tagline:{en:"Hot springs, mangroves & Myanmar border",bm:"Mata air panas, bakau & sempadan Myanmar"},tags:["Hot Springs","Nature","Eco"],badges:["eco"],nights:1,active:true,
+   listings:[{t:"eco",name:"Ranong Mangrove Forest Tour",desc:{en:"Eco-boat through Thailand's intact mangroves",bm:"Bot eko melalui bakau Thai yang utuh"}},{t:"wellness",name:"Raksawarin Hot Springs",desc:{en:"Natural thermal springs — healing and restorative",bm:"Mata air termal semulajadi — penyembuhan"}}]},
+  {id:"chumphon",name:"Chumphon",prov:"Chumphon Province",tagline:{en:"Northern gateway to the south, dive paradise",bm:"Pintu masuk utara, syurga penyelam"},tags:["Diving","Islands","Gateway"],badges:["eco"],nights:1,active:true,
+   listings:[{t:"eco",name:"Chumphon Marine Dive Tour",desc:{en:"PADI-certified dive in crystal-clear waters",bm:"Menyelam PADI di perairan yang jernih"}},{t:"food",name:"Paknam Chumphon Halal Seafood",desc:{en:"Riverside fresh seafood at the fishing village",bm:"Makanan laut segar tepi sungai di kampung nelayan"}}]},
+  {id:"bangkok",name:"Bangkok",prov:"Central Thailand",tagline:{en:"Halal in the City of Angels — coming soon",bm:"Halal di Bangkok — akan datang"},tags:["City","Halal","Medical"],badges:["soon","pop"],nights:0,active:false,listings:[]},
+  {id:"chiangmai",name:"Chiang Mai",prov:"Northern Thailand",tagline:{en:"Halal mountain escapes — coming soon",bm:"Pengembaraan gunung halal — akan datang"},tags:["Mountains","Culture"],badges:["soon"],nights:0,active:false,listings:[]},
+  {id:"kanchanaburi",name:"Kanchanaburi",prov:"Western Thailand",tagline:{en:"River Kwai history & eco-nature — coming soon",bm:"Sejarah Sungai Kwai & eko — akan datang"},tags:["History","River","Eco"],badges:["soon","eco"],nights:0,active:false,listings:[]},
+  {id:"ayutthaya",name:"Ayutthaya",prov:"Central Thailand",tagline:{en:"Ancient royal capital — coming soon",bm:"Ibu kota diraja purba — akan datang"},tags:["UNESCO","Heritage"],badges:["soon"],nights:0,active:false,listings:[]},
+  {id:"kohlanta",name:"Koh Lanta",prov:"Krabi Province",tagline:{en:"Peaceful Muslim-majority island — coming soon",bm:"Pulau majoriti Muslim yang aman — akan datang"},tags:["Island","Muslim","Eco"],badges:["soon","eco"],nights:0,active:false,listings:[]}
+];
+
+let lang="en",activeDCat,activeDRegion=null,routeStops=[],sActiveCat,rowsOpen=false;
+const L=()=>T[lang];
+const setT=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v};
+const setH=(id,v)=>{const e=document.getElementById(id);if(e)e.innerHTML=v};
+
+const T={
+en:{badge:"Halal Verified · Muslim-Friendly Travel",h1:"Beyond Hatyai.<br>Discover the real south.",p:"Your trusted halal guide — eco-adventures, wellness, medical tourism and living heritage.",sbtn:"Search",heroPills:["Satun Islands","Krabi Cliffs","Trang Caves","Pattani Heritage","Medical Tourism"],trust:[{i:"✓",t:"Halal-certified"},{i:"★",t:"UNESCO Geopark"},{i:"🌿",t:"Eco-friendly"},{i:"🕌",t:"Cultural heritage"},{i:"🏥",t:"Medical & wellness"}],values:[{i:"🌿",ti:"Ecotourism",de:"Responsible nature travel"},{i:"♻",ti:"Sustainability",de:"Low-impact, local businesses"},{i:"🕌",ti:"Culture & Heritage",de:"Malay-Thai heritage & traditions"},{i:"🏥",ti:"Medical & Wellness",de:"Halal healthcare & retreats"}],geoLbl:"Core Partnership",geoTitle:"Langkawi ↔ Satun Geopark",geoSub:"Two UNESCO Geoparks. One seamless halal journey.",lkName:"Langkawi",lkSub:"UNESCO Geopark · Malaysia",lkFerry:"Kuah Jetty",stName:"Satun",stSub:"UNESCO Geopark · Thailand",stFerry:"Tammalang Pier",ferryTxt:"Ferry<br>~45 min",mhEyebrow:"Legend Travel Route",mhTitle:"The Mahsuri Trail<br>Langkawi → Phuket",mhSub:"Follow legendary footsteps of Mahsuri — 200 years of love, injustice and a curse.",mhStory:"In the early 1800s, Mahsuri — daughter of Phuket Malay parents who migrated to Langkawi — was falsely accused of adultery while her warrior husband was away at war. Despite bleeding white blood as proof of her innocence, she was executed. With her dying breath, she cursed Langkawi with seven generations of misfortune. Her family fled back to Siam. In 2000, her seventh-generation descendant Wan Aishah was found in Kampung Kemala, Phuket — and when she returned to Mahsuri's tomb, Langkawi finally began to prosper.",mhRouteLabel:"Follow the trail — 5 stops across the Malay-Thai corridor",mhCta:"Plan this journey",mhNote:"Est. 7 days · Halal-certified throughout",spLabel:"Partner spotlight",spText:"Reach 50,000+ Malaysian halal travellers",spSub:"Premium listing & banner placements available",spCta:"Advertise",regLbl:"All Destinations",regTitle:"20 best places to explore",regSub:"All 14 southern provinces · Bangkok & Chiang Mai",viewAll:"View all",closeLp:"Close ✕",vidLbl:"Watch & Explore",vidTitle:"Travel reels & vlogs",blogLbl:"Guest Writers",blogTitle:"Stories from the road",blogAll:"Read all",aceh:"Expanding soon — Aceh corridor (Indonesia) · Full Bahasa-speaking travel belt coming soon",footerTagline:"Where halal travel meets authentic adventure — Southern Thailand's most trusted Muslim-friendly guide.",footerSeo:"Halal hotels Krabi · Halal food Hatyai · Muslim-friendly Satun · Eco-tourism · Medical tourism Thailand · Mahsuri Trail",fl1:"Southern Provinces",fl2:"Travel Resources",footerRes:["Halal Food Guide","Hotel Finder","Eco-Tours","Medical Tourism","Wellness Retreats","Route Planner","Mahsuri Trail","Partner with Us"],footerCopy:"© 2025 Jalan-Jalan Thailand · Halal travel, responsibly curated.",footerTags:["#HalalTravelThailand","#MuslimFriendlyThailand","#MahsuriTrail","#WisataHalalThailand"],ecoTitle:"Travel with Purpose",ecoSub:"Every journey supports responsible, sustainable and community-led tourism.",cats:["All","Food","Stay","Activity","Eco-tour","Medical","Wellness","Package"],sTitle:"Search listings",sSub:"Halal food, hotels, eco-tours, medical & wellness",sPlaceholder:"Name, region, keyword...",sAllRegions:"All regions",rTitle:"Plan your route",rSub:"Multi-stop halal journey from Langkawi into Southern Thailand",rAddLabel:"Add a destination",rAddBtn:"+ Add",rGenBtn:"Generate itinerary",rTipTitle:"Recommended starting route",rTipBody:"Langkawi → Satun (ferry) → Trang → Krabi → Pattani. UNESCO Geopark, eco-zones, Malay cultural heritage — perfect 5-day halal road trip.",rRemove:"Remove",rNights:"nights",rDays:"days",pTitle:"Join as a tourism partner",pSub:"List your business · reach thousands of Malaysian halal travellers",pfs1:"Business information",pfs2:"Halal certification",pfs3:"Contact details",pfs4:"Services & sustainability",pfBname:"Business name *",pfCat:"Category *",pfRegion:"Region *",pfDesc:"Brief description",pfH1:"Certified (JAKIM / Thai equivalent)",pfH2:"Muslim-owned, no pork / alcohol",pfH3:"Halal-friendly (separate utensils)",pfContact:"Contact person *",pfPhone:"WhatsApp *",pfEmail:"Email address",pfBase:"Based in",pfSvc:"Services offered",pfEco:"Eco / sustainability practices",pfNote:"Anything else?",pfSubmit:"Submit application",psTitle:"Application received!",psMsg:"Our team will review and reach out via WhatsApp within 3–5 working days.",services:["Group tours","Airport transfer","Hotel booking","Halal food guide","Custom packages","Ferry booking","Cultural walks","Medical packages","Wellness packages","Senior-friendly tours"],ecoPractices:["Solar/renewable energy","Plastic-free","Community employment","Wildlife conservation","Farm-to-table","Carbon offset"],bases:["Kedah","Penang","Perlis","Kelantan","Terengganu","Southern Thailand","Bangkok","Other"],halBadge:"Halal verified",itinTitle:"Suggested itinerary",showMore:"Show more ▾",showLess:"Show less ▴",tabDiscover:"Discover",tabSearch:"Search",tabRoute:"Route",tabPartner:"Partner"},
+bm:{badge:"Disahkan Halal · Mesra Muslim",h1:"Lebih dari Hatyai.<br>Temui selatan yang sebenar.",p:"Panduan halal percayaan anda — eko, kesihatan, pelancongan perubatan dan warisan hidup.",sbtn:"Cari",heroPills:["Pulau Satun","Tebing Krabi","Gua Trang","Warisan Pattani","Pelancongan Perubatan"],trust:[{i:"✓",t:"Bertauliah halal"},{i:"★",t:"Geopark UNESCO"},{i:"🌿",t:"Mesra eko"},{i:"🕌",t:"Warisan budaya"},{i:"🏥",t:"Perubatan & kesihatan"}],values:[{i:"🌿",ti:"Ekopelancongan",de:"Perjalanan alam bertanggungjawab"},{i:"♻",ti:"Kemampanan",de:"Impak rendah, perniagaan tempatan"},{i:"🕌",ti:"Budaya & Warisan",de:"Warisan Melayu-Thai & tradisi"},{i:"🏥",ti:"Perubatan & Kesihatan",de:"Penjagaan kesihatan halal"}],geoLbl:"Perkongsian Utama",geoTitle:"Koridor Geopark Langkawi ↔ Satun",geoSub:"Dua Geopark UNESCO. Satu perjalanan halal yang lancar.",lkName:"Langkawi",lkSub:"Geopark UNESCO · Malaysia",lkFerry:"Jeti Kuah",stName:"Satun",stSub:"Geopark UNESCO · Thailand",stFerry:"Jeti Tammalang",ferryTxt:"Feri<br>~45 min",mhEyebrow:"Laluan Perjalanan Legenda",mhTitle:"Laluan Mahsuri<br>Langkawi → Phuket",mhSub:"Ikuti jejak legenda Mahsuri — 200 tahun cinta, ketidakadilan dan kutukan.",mhStory:"Pada awal 1800-an, Mahsuri — puteri ibu bapa Melayu Phuket yang berhijrah ke Langkawi — dituduh berzina secara palsu. Walaupun darah putih mengalir sebagai bukti kesuciannya, dia tetap dihukum mati. Dengan nafas terakhirnya, dia mengutuk Langkawi dengan tujuh generasi nasib malang. Pada tahun 2000, keturunan ketujuhnya, Wan Aishah, dijumpai di Kampung Kemala, Phuket.",mhRouteLabel:"Ikuti laluan — 5 perhentian merentasi koridor Melayu-Thai",mhCta:"Rancang perjalanan ini",mhNote:"Anggaran 7 hari · Bertauliah halal sepanjang perjalanan",spLabel:"Sorotan rakan",spText:"Capai 50,000+ pengembara halal Malaysia",spSub:"Penempatan senarai & banner premium tersedia",spCta:"Iklan",regLbl:"Semua Destinasi",regTitle:"20 tempat terbaik untuk diterokai",regSub:"Semua 14 wilayah selatan · Bangkok & Chiang Mai",viewAll:"Lihat semua",closeLp:"Tutup ✕",vidLbl:"Tonton & Teroka",vidTitle:"Reel & vlog perjalanan",blogLbl:"Penulis Tetamu",blogTitle:"Kisah dari jalanan",blogAll:"Baca semua",aceh:"Akan datang — koridor Aceh (Indonesia) · Jaringan perjalanan Bahasa penuh tidak lama lagi",footerTagline:"Di mana pelancongan halal bertemu pengembaraan tulen — panduan mesra Muslim selatan Thailand paling dipercayai.",footerSeo:"Hotel halal Krabi · Makanan halal Hatyai · Satun mesra Muslim · Ekopelancongan · Pelancongan perubatan · Laluan Mahsuri",fl1:"Wilayah Selatan",fl2:"Sumber Perjalanan",footerRes:["Panduan Makanan Halal","Pencari Hotel","Eko-Pelancongan","Pelancongan Perubatan","Retret Kesihatan","Perancang Laluan","Laluan Mahsuri","Jadilah Rakan"],footerCopy:"© 2025 Jalan-Jalan Thailand · Pelancongan halal, dikurasi dengan tanggungjawab.",footerTags:["#WisataHalalThailand","#HalalTravelThailand","#LalaluanMahsuri","#PerlanconganHalal"],ecoTitle:"Perjalanan Bermakna",ecoSub:"Setiap perjalanan menyokong pelancongan yang bertanggungjawab dan berasaskan komuniti.",cats:["Semua","Makanan","Penginapan","Aktiviti","Eko-tour","Perubatan","Kesihatan","Pakej"],sTitle:"Cari senarai",sSub:"Makanan halal, hotel, eko-tour, perubatan & kesihatan",sPlaceholder:"Nama, kawasan, kata kunci...",sAllRegions:"Semua kawasan",rTitle:"Rancang laluan anda",rSub:"Perjalanan halal dari Langkawi ke selatan Thailand",rAddLabel:"Tambah destinasi",rAddBtn:"+ Tambah",rGenBtn:"Jana itinerari",rTipTitle:"Laluan permulaan yang disyorkan",rTipBody:"Langkawi → Satun (feri) → Trang → Krabi → Pattani. Geopark UNESCO, zon eko pesisir, warisan budaya Melayu — perjalanan halal 5 hari yang sempurna.",rRemove:"Buang",rNights:"malam",rDays:"hari",pTitle:"Sertai sebagai rakan pelancongan",pSub:"Senaraikan perniagaan anda · capai ribuan pengembara halal",pfs1:"Maklumat perniagaan",pfs2:"Pensijilan halal",pfs3:"Maklumat hubungan",pfs4:"Perkhidmatan & kemampanan",pfBname:"Nama perniagaan *",pfCat:"Kategori *",pfRegion:"Kawasan *",pfDesc:"Penerangan ringkas",pfH1:"Bertauliah (JAKIM / setara Thai)",pfH2:"Milik Muslim, tiada khinzir/arak",pfH3:"Mesra halal (bekas berasingan)",pfContact:"Nama pegawai *",pfPhone:"WhatsApp *",pfEmail:"Alamat emel",pfBase:"Berpangkalan di",pfSvc:"Perkhidmatan ditawarkan",pfEco:"Amalan eko / kemampanan",pfNote:"Ada lagi?",pfSubmit:"Hantar permohonan",psTitle:"Permohonan diterima!",psMsg:"Pasukan kami akan menyemak dan menghubungi melalui WhatsApp dalam 3–5 hari bekerja.",services:["Lawatan kumpulan","Pemindahan lapangan terbang","Tempahan hotel","Panduan makanan halal","Pakej tersuai","Tempahan feri","Jalan kaki budaya","Pakej perubatan","Pakej kesihatan","Lawatan mesra warga emas"],ecoPractices:["Tenaga solar","Tanpa plastik","Pengambilan komuniti","Pemuliharaan hidupan liar","Ladang-ke-meja","Offset karbon"],bases:["Kedah","Pulau Pinang","Perlis","Kelantan","Terengganu","Selatan Thailand","Bangkok","Lain-lain"],halBadge:"Disahkan Halal",itinTitle:"Cadangan itinerari",showMore:"Tunjuk lebih banyak ▾",showLess:"Tunjuk lebih sedikit ▴",tabDiscover:"Jelajah",tabSearch:"Cari",tabRoute:"Laluan",tabPartner:"Rakan"}
+};
+
+function showTab(id){
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.querySelectorAll(".nav-tab").forEach(b=>{b.classList.remove("active");b.setAttribute("aria-selected","false")});
+  document.getElementById("page-"+id).classList.add("active");
+  const tb=document.getElementById("tab-"+id);if(tb){tb.classList.add("active");tb.setAttribute("aria-selected","true")}
+  if(id==="search"){renderSearchCats();doSearch()}
+  window.scrollTo(0,0);
+}
+
+function setLang(l){
+  lang=l;
+  document.querySelectorAll(".lang-btn").forEach(b=>{b.classList.toggle("active",b.textContent===l.toUpperCase());b.setAttribute("aria-pressed",b.textContent===l.toUpperCase())});
+  applyAll();
+}
+
+function renderRegionCard(r){
+  const imgStyle=`width:100%;height:100%;object-fit:cover`;
+  return `<div class="region-card${r.badges.includes("anc")?" anc":""}${!r.active?" cs":""}" ${r.active?`onclick="openListings('${r.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openListings('${r.id}')"`:`aria-disabled="true"`}>
+    <div class="region-img">
+      <img src="${PHOTOS[r.id]}" alt="${r.name} halal travel" loading="lazy" style="${imgStyle}" onerror="this.parentElement.style.background='#1a4a6e'">
+      <div class="badge-row">${r.badges.map(b=>bmap[b]||"").join("")}</div>
+    </div>
+    <div class="region-body">
+      <div class="region-name">${r.name}</div>
+      <div class="region-prov">${r.prov}</div>
+      <div class="region-tagline">${r.tagline[lang]}</div>
+      <div class="region-tags">${r.tags.map(t=>`<span class="r-tag">${t}</span>`).join("")}</div>
+    </div>
+  </div>`;
+}
+
+function renderAllRegions(){
+  document.getElementById("d-region-grid").innerHTML=REGIONS.slice(0,8).map(renderRegionCard).join("");
+  document.getElementById("rows-extra").innerHTML=REGIONS.slice(8,20).map(renderRegionCard).join("");
+}
+
+function toggleRows(){
+  rowsOpen=!rowsOpen;
+  document.getElementById("rows-extra").classList.toggle("open",rowsOpen);
+  document.getElementById("show-more-btn").textContent=rowsOpen?L().showLess:L().showMore;
+}
+
+function openListings(rid){
+  const r=REGIONS.find(x=>x.id===rid);if(!r||!r.active||!r.listings.length)return;
+  activeDRegion=rid;activeDCat=L().cats[0];
+  const panel=document.getElementById("d-listings-panel");panel.classList.add("open");
+  setT("d-lp-title",r.name+" — "+(lang==="bm"?"Senarai Terpilih":"Curated Listings"));
+  document.getElementById("d-cat-filters").innerHTML=L().cats.map(c=>`<button class="cat-btn${c===activeDCat?" active":""}" onclick="filterDCat('${c}')">${c}</button>`).join("");
+  renderDListings(r);panel.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function closeDListings(){document.getElementById("d-listings-panel").classList.remove("open");activeDRegion=null}
+function filterDCat(cat){
+  activeDCat=cat;
+  document.querySelectorAll("#d-cat-filters .cat-btn").forEach(b=>b.classList.toggle("active",b.textContent===cat));
+  renderDListings(REGIONS.find(x=>x.id===activeDRegion));
+}
+function renderDListings(r){
+  const all=L().cats[0];
+  const items=r.listings.filter(l=>activeDCat===all||(CAT_MAP[l.t]||[]).includes(activeDCat));
+  document.getElementById("d-listing-items").innerHTML=items.length?items.map(l=>listingCard(l,r.name)).join(""):`<div class="no-results">${lang==="bm"?"Tiada senarai.":"No listings in this category."}</div>`;
+}
+function listingCard(l,rn){
+  const cl=(CAT_MAP[l.t]||[])[lang==="bm"?1:0]||l.t;
+  return `<div class="listing-card"><div class="lthumb"><img src="${LT[l.t]||LT.food}" alt="${l.name}" loading="lazy" onerror="this.parentElement.style.background='#d8e0ea'"></div><div class="lbody"><div class="lname">${l.name}</div><div class="ldesc">${l.desc[lang]}</div><div class="lmeta"><span class="lcat ${LC[l.t]||"lcat-food"}">${cl}</span>${rn?`<span class="reg-pill">${rn}</span>`:""}<span class="halal-pill">${L().halBadge}</span></div></div></div>`;
+}
+
+function renderVideos(){
+  document.getElementById("d-video-grid").innerHTML=VIDEOS.map(v=>`
+    <div class="video-card" onclick="alert('${lang==="bm"?"Video akan dibuka dalam aplikasi":"Video would open in app'}")" role="button" tabindex="0">
+      <div class="vthumb ${v.orient}" style="position:relative">
+        <img src="${v.thumb}" alt="${v.title[lang]}" loading="lazy" onerror="this.parentElement.style.background='#1a4a6e'">
+        <div class="vplay">▶</div>
+        <div class="vplatform">${v.type}</div>
+      </div>
+      <div class="vbody">
+        <div class="vchannel">${v.channel}</div>
+        <div class="vtitle">${v.title[lang]}</div>
+        <div class="vmeta">${v.meta}</div>
+      </div>
+    </div>`).join("");
+}
+
+function renderBlogs(){
+  document.getElementById("d-blog-grid").innerHTML=BLOGS.map(b=>`
+    <div class="blog-card" role="article" tabindex="0">
+      <div class="blog-img" style="position:relative">
+        <img src="${b.img}" alt="${b.title[lang]}" loading="lazy" onerror="this.parentElement.style.background='#2d4a22'">
+        <div class="blog-cat-badge ${b.catCls}">${b.catLabel[lang]}</div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-author-row">
+          <div class="blog-avatar" style="background:${b.bg};color:${b.fc}">${b.initials}</div>
+          <div><div class="blog-author">${b.author}</div><div class="blog-date">${b.date[lang]}</div></div>
+        </div>
+        <div class="blog-title">${b.title[lang]}</div>
+        <div class="blog-excerpt">${b.excerpt[lang]}</div>
+        <div class="blog-read">${b.read[lang]} →</div>
+      </div>
+    </div>`).join("");
+}
+
+function renderMahsuriRoute(){
+  document.getElementById("mh-route").innerHTML=MAHSURI_STOPS.map((s,i)=>`
+    <div class="route-stop">
+      <div class="route-stop-img"><img src="${s.img}" alt="${s.name}" loading="lazy" onerror="this.parentElement.style.background='#3d1a78'"></div>
+      <div class="route-stop-num">${i+1}</div>
+      <div class="route-stop-body">
+        <div class="route-stop-name">${s.name}</div>
+        <div class="route-stop-detail">${s.detail[lang]}</div>
+      </div>
+    </div>`).join("");
+}
+
+function populateSearchRegion(){document.getElementById("s-region").innerHTML=`<option value="">${L().sAllRegions}</option>`+REGIONS.filter(r=>r.active).map(r=>`<option value="${r.id}">${r.name}</option>`).join("")}
+function renderSearchCats(){
+  sActiveCat=L().cats[0];
+  document.getElementById("s-cat-filters").innerHTML=L().cats.map(c=>`<button class="filter-pill${c===sActiveCat?" active":""}" onclick="filterSCat('${c}')">${c}</button>`).join("");
+  doSearch();
+}
+function filterSCat(cat){sActiveCat=cat;document.querySelectorAll("#s-cat-filters .filter-pill").forEach(b=>b.classList.toggle("active",b.textContent===cat));doSearch()}
+function doSearch(){
+  const q=((document.getElementById("s-input")||{}).value||"").toLowerCase();
+  const rf=(document.getElementById("s-region")||{}).value||"";
+  const all=L().cats[0];let res=[];
+  REGIONS.filter(r=>r.active).forEach(r=>{
+    if(rf&&r.id!==rf)return;
+    r.listings.forEach(l=>{
+      if(sActiveCat!==all&&!(CAT_MAP[l.t]||[]).includes(sActiveCat))return;
+      if(!q||l.name.toLowerCase().includes(q)||l.desc[lang].toLowerCase().includes(q)||r.name.toLowerCase().includes(q))res.push({...l,region:r.name});
+    });
+  });
+  const sc=document.getElementById("s-count");if(sc)sc.textContent=lang==="bm"?`${res.length} senarai dijumpai`:`${res.length} listings found`;
+  const sr=document.getElementById("s-results");if(sr)sr.innerHTML=res.length?res.map(l=>listingCard(l,l.region)).join(""):`<div class="no-results">${lang==="bm"?"Tiada keputusan.":"No results found."}</div>`;
+}
+function syncHero(e){const si=document.getElementById("s-input");if(si)si.value=e.target.value}
+function doHeroSearch(){showTab("search");doSearch()}
+
+function populateRouteSelect(){document.getElementById("r-sel").innerHTML=`<option value="">${lang==="bm"?"Pilih kawasan...":"Select region..."}</option>`+REGIONS.filter(r=>r.active).map(r=>`<option value="${r.id}">${r.name}</option>`).join("")}
+function addStop(){const sel=document.getElementById("r-sel"),rid=sel.value;if(!rid||routeStops.includes(rid))return;routeStops.push(rid);sel.value="";renderRouteStops()}
+function removeStop(rid){routeStops=routeStops.filter(s=>s!==rid);renderRouteStops();document.getElementById("itin-box").style.display="none"}
+function renderRouteStops(){
+  const l=L(),wrap=document.getElementById("route-steps");
+  if(!routeStops.length){wrap.innerHTML=`<div class="stop-empty">${lang==="bm"?"Tambah destinasi pertama anda di atas":"Add your first destination above"}</div>`;document.getElementById("route-summary-wrap").style.display="none";return}
+  const stops=[{id:"langkawi",name:"Langkawi 🇲🇾",detail:lang==="bm"?"Titik mula — Jeti Kuah":"Starting point — Kuah Jetty",nights:0,isStart:true},...routeStops.map(rid=>{const r=REGIONS.find(x=>x.id===rid);return{id:rid,name:r.name,detail:r.tagline[lang],nights:r.nights}})];
+  wrap.innerHTML=stops.map((s,i)=>`${i>0?`<div class="stop-conn">${i===1?"⇄ ferry ~45 min":"→ road / ferry"}</div>`:""}<div class="stop-card${s.isStart?" anch":""}"><div class="stop-num">${i+1}</div><div class="stop-img"><img src="${PHOTOS[s.id]||PHOTOS.satun}" alt="${s.name}" loading="lazy" onerror="this.parentElement.style.background='#d8e0ea'"></div><div class="stop-body"><div class="stop-name">${s.name}</div><div class="stop-detail">${s.detail}${s.nights?` · ${s.nights} ${l.rNights}`:""}</div></div>${!s.isStart?`<button class="remove-btn" onclick="removeStop('${s.id}')">${l.rRemove}</button>`:""}</div>`).join("");
+  const tn=routeStops.reduce((a,rid)=>a+(REGIONS.find(x=>x.id===rid).nights||0),0);
+  document.getElementById("route-summary-wrap").style.display="block";
+  document.getElementById("route-summary").innerHTML=`<div class="rs-row"><span class="rs-label">${lang==="bm"?"Jumlah destinasi":"Total destinations"}</span><span class="rs-val">${routeStops.length} ${lang==="bm"?"kawasan":"regions"}</span></div><div class="rs-row"><span class="rs-label">${lang==="bm"?"Malam cadangan":"Suggested nights"}</span><span class="rs-val">${tn} ${l.rNights}</span></div><div class="rs-row"><span class="rs-label">${lang==="bm"?"Jumlah hari":"Total days"}</span><span class="rs-val">${tn+1} ${l.rDays}</span></div><div class="rs-row"><span class="rs-label">${lang==="bm"?"Pintu masuk":"Entry point"}</span><span class="rs-val">Langkawi → Satun</span></div>`;
+}
+function genItin(){
+  if(!routeStops.length)return;
+  const l=L(),box=document.getElementById("itin-box");let day=1;
+  const all=[{id:"langkawi",name:"Langkawi",nights:0,listings:[{t:"activity",name:lang==="bm"?"Tiba Jeti Kuah, daftar masuk":"Arrive Kuah Jetty, check in",desc:{en:"",bm:""}},{t:"food",name:lang==="bm"?"Makan malam halal":"Dinner at halal restaurant",desc:{en:"",bm:""}}]},...routeStops.map(rid=>REGIONS.find(x=>x.id===rid))];
+  let html=`<div style="font-size:14px;font-weight:800;color:var(--navy);margin-bottom:.875rem">${l.itinTitle}</div>`;
+  all.forEach((r,i)=>{const n=r.nights||0;html+=`<div class="itin-day"><div class="itin-day-lbl">${lang==="bm"?"Hari":"Day"} ${day}${n>1?" – "+(day+n-1):""}  · ${r.name}</div>`;if(i===0){html+=`<div class="itin-item">${lang==="bm"?"Tiba Langkawi, daftar masuk":"Arrive Langkawi, check in"}</div><div class="itin-item">${lang==="bm"?"Makan malam: restoran halal":"Dinner: local halal restaurant"}</div>`}else{if(i===1)html+=`<div class="itin-item">${lang==="bm"?"Feri pagi → Tammalang (~45 min)":"Morning ferry → Tammalang (~45 min)"}</div>`;(r.listings||[]).slice(0,3).forEach(li=>{html+=`<div class="itin-item"><strong>${li.name}</strong>${li.desc&&li.desc[lang]?" — "+li.desc[lang]:""}</div>`})}html+="</div>";day+=Math.max(n,1)});
+  box.innerHTML=html;box.style.display="block";box.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+
+async function submitPartner(){
+  const name=document.getElementById("pf-bname").value.trim();
+  const contact=document.getElementById("pf-contact").value.trim();
+  const phone=document.getElementById("pf-phone").value.trim();
+  if(!name||!contact||!phone){alert(lang==="bm"?"Sila lengkapkan medan bertanda *.":"Please fill in required fields (*).");return}
+  const btn=document.getElementById("pf-submit");btn.textContent=lang==="bm"?"Menghantar...":"Submitting...";btn.disabled=true;
+  const payload={businessName:name,category:document.getElementById("pf-cat").value,region:document.getElementById("pf-region-sel").value,description:document.getElementById("pf-desc").value,contactPerson:contact,whatsapp:phone,email:document.getElementById("pf-email").value,notes:document.getElementById("pf-note").value,language:lang==="bm"?"Bahasa Melayu":"English",submittedAt:new Date().toLocaleString("en-MY",{timeZone:"Asia/Kuala_Lumpur"})};
+  try{
+    const res=await fetch("https://formspree.io/f/mpqkryda",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(payload)});
+    if(res.ok){document.getElementById("partner-form").style.display="none";document.getElementById("partner-ok").classList.add("show")}
+    else{const d=await res.json();alert((lang==="bm"?"Ralat: ":"Error: ")+(d?.error||"Please try again."));btn.textContent=L().pfSubmit;btn.disabled=false}
+  }catch(e){alert(lang==="bm"?"Tiada sambungan internet.":"Network error. Please check your connection.");btn.textContent=L().pfSubmit;btn.disabled=false}
+}
+
+function applyAll(){
+  const l=L();
+  setH("d-h1",l.h1);setT("d-badge",l.badge);setT("d-p",l.p);
+  const dsb=document.getElementById("d-sbtn");if(dsb)dsb.textContent=l.sbtn;
+  const hi=document.getElementById("hero-input");if(hi)hi.placeholder=lang==="bm"?"Ke mana anda mahu pergi?":"Where do you want to go?";
+  document.getElementById("d-hero-pills").innerHTML=l.heroPills.map(p=>`<button class="hero-pill" onclick="document.getElementById('hero-input').value='${p}';doHeroSearch()">${p}</button>`).join("");
+  document.getElementById("d-trust").innerHTML=l.trust.map(t=>`<div class="trust-item"><span>${t.i}</span><span>${t.t}</span></div>`).join("");
+  document.getElementById("d-values").innerHTML=`<div style="text-align:center;width:100%;margin-bottom:.625rem"><div style="font-size:10px;font-weight:800;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em">${lang==="bm"?"Komitmen Kami":"Our Commitment"}</div></div>`+l.values.map(v=>`<div class="val-card"><div class="val-icon">${v.i}</div><div class="val-title">${v.ti}</div><div class="val-desc">${v.de}</div></div>`).join("");
+  setT("d-geo-lbl",l.geoLbl);setT("d-geo-title",l.geoTitle);setT("d-geo-sub",l.geoSub);
+  setT("d-lk-name",l.lkName);setT("d-lk-sub",l.lkSub);setT("d-lk-ferry",l.lkFerry);
+  setT("d-st-name",l.stName);setT("d-st-sub",l.stSub);setT("d-st-ferry",l.stFerry);
+  setH("d-ferry-txt",l.ferryTxt);
+  setT("mh-eyebrow",l.mhEyebrow);setH("mh-title",l.mhTitle);setT("mh-sub",l.mhSub);setT("mh-story",l.mhStory);setT("mh-route-label",l.mhRouteLabel);setT("mh-cta",l.mhCta);setT("mh-note",l.mhNote);
+  setT("sp-label",l.spLabel);setT("sp-text",l.spText);setT("sp-sub",l.spSub);setT("sp-cta",l.spCta);
+  setT("d-reg-lbl",l.regLbl);setT("d-reg-title",l.regTitle);setT("d-reg-sub",l.regSub);setT("d-view-all",l.viewAll);setT("d-close-lp",l.closeLp);
+  setT("d-vid-lbl",l.vidLbl);setT("d-vid-title",l.vidTitle);
+  setT("d-blog-lbl",l.blogLbl);setT("d-blog-title",l.blogTitle);setT("d-blog-all",l.blogAll);
+  setT("d-aceh",l.aceh);
+  document.getElementById("d-eco-strip").innerHTML=`<div class="eco-title">${l.ecoTitle}</div><div class="eco-sub">${l.ecoSub}</div><div class="eco-cards">${l.values.map(v=>`<div class="eco-card"><div class="eco-icon">${v.i}</div><div class="eco-card-title">${v.ti}</div><div class="eco-card-desc">${v.de}</div></div>`).join("")}</div>`;
+  setT("d-footer-tagline",l.footerTagline);setT("d-footer-seo",l.footerSeo);setT("d-fl1",l.fl1);setT("d-fl2",l.fl2);
+  document.getElementById("d-f-south").innerHTML=REGIONS.filter(r=>r.active&&!["bangkok","chiangmai","kanchanaburi","ayutthaya","kohlanta"].includes(r.id)).slice(0,6).map(r=>`<a class="footer-lnk" href="#">${r.name}</a>`).join("");
+  document.getElementById("d-f-res").innerHTML=l.footerRes.map(lk=>`<a class="footer-lnk" href="#">${lk}</a>`).join("");
+  setT("d-footer-copy",l.footerCopy);document.getElementById("d-footer-tags").innerHTML=l.footerTags.map(t=>`<span class="footer-tag">${t}</span>`).join("");
+  setT("s-title",l.sTitle);setT("s-sub",l.sSub);const si=document.getElementById("s-input");if(si)si.placeholder=l.sPlaceholder;
+  setT("r-title",l.rTitle);setT("r-sub",l.rSub);setT("r-add-label",l.rAddLabel);setT("r-add-btn",l.rAddBtn);setT("r-gen-btn",l.rGenBtn);setT("r-tip-title",l.rTipTitle);setT("r-tip-body",l.rTipBody);
+  setT("p-title",l.pTitle);setT("p-sub",l.pSub);
+  const pfm={"pf-s1":l.pfs1,"pf-s2":l.pfs2,"pf-s3":l.pfs3,"pf-s4":l.pfs4,"pf-bname-l":l.pfBname,"pf-cat-l":l.pfCat,"pf-region-l":l.pfRegion,"pf-desc-l":l.pfDesc,"pf-h1":l.pfH1,"pf-h2":l.pfH2,"pf-h3":l.pfH3,"pf-contact-l":l.pfContact,"pf-phone-l":l.pfPhone,"pf-email-l":l.pfEmail,"pf-base-l":l.pfBase,"pf-svc-l":l.pfSvc,"pf-eco-l":l.pfEco,"pf-note-l":l.pfNote,"pf-submit":l.pfSubmit,"ps-title":l.psTitle,"ps-msg":l.psMsg};
+  Object.entries(pfm).forEach(([id,v])=>setT(id,v));
+  document.getElementById("pf-region-sel").innerHTML=`<option value="">Select...</option>`+REGIONS.map(r=>`<option value="${r.id}">${r.name}</option>`).join("");
+  document.getElementById("pf-based").innerHTML=l.bases.map(b=>`<label class="cb-item"><input type="checkbox"> <span>${b}</span></label>`).join("");
+  document.getElementById("pf-services").innerHTML=l.services.map(s=>`<label class="cb-item"><input type="checkbox"> <span>${s}</span></label>`).join("");
+  document.getElementById("pf-eco").innerHTML=l.ecoPractices.map(s=>`<label class="cb-item"><input type="checkbox"> <span>${s}</span></label>`).join("");
+  ["tab-discover","tab-search","tab-route","tab-partner"].forEach((id,i)=>setT(id,[l.tabDiscover,l.tabSearch,l.tabRoute,l.tabPartner][i]));
+  const smb=document.getElementById("show-more-btn");if(smb)smb.textContent=rowsOpen?l.showLess:l.showMore;
+  renderAllRegions();if(activeDRegion)openListings(activeDRegion);
+  renderRouteStops();populateRouteSelect();populateSearchRegion();renderSearchCats();doSearch();
+  renderVideos();renderBlogs();renderMahsuriRoute();
+}
+
+/* Hero slideshow */
+let slide=0;
+const slides=document.querySelectorAll(".slide");
+const caps=document.querySelectorAll(".cap");
+const dotsWrap=document.getElementById("hero-dots");
+slides.forEach((_,i)=>{const btn=document.createElement("button");btn.className="hdot"+(i===0?" active":"");btn.setAttribute("aria-label","Slide "+(i+1));btn.onclick=()=>goSlide(i);dotsWrap.appendChild(btn)});
+function goSlide(n){slides[slide].classList.remove("active");caps[slide].classList.remove("active");dotsWrap.children[slide].classList.remove("active");slide=n%slides.length;slides[slide].classList.add("active");caps[slide].classList.add("active");dotsWrap.children[slide].classList.add("active")}
+setInterval(()=>goSlide(slide+1),4500);
+
+applyAll();
+</script>
+</body>
+</html>
   --coral:#FF6B6B;--coral-l:#ffe0e0;
   --sky:#4ECDC4;--sky-l:#e0f7f5;
   --gold:#FFB347;--gold-l:#fff3e0;
