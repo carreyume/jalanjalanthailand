@@ -359,10 +359,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <!-- HERO -->
   <div class="hero">
     <div id="hero-slides">
-      <div class="slide active"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80&fit=crop" alt="Krabi limestone cliffs"><div class="slide-ov"></div></div>
-      <div class="slide"><img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1400&q=80&fit=crop" alt="Satun island paradise"><div class="slide-ov"></div></div>
-      <div class="slide"><img src="https://images.unsplash.com/photo-1608037521244-f1c6573890dc?w=1400&q=80&fit=crop" alt="Langkawi Geopark Malaysia"><div class="slide-ov"></div></div>
-      <div class="slide"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1400&q=80&fit=crop" alt="Wellness retreat Thailand"><div class="slide-ov"></div></div>
+      <div class="slide active"><img src="https://source.unsplash.com/1400x600/?krabi,thailand,limestone,beach" alt="Krabi limestone cliffs and turquoise sea, Southern Thailand"><div class="slide-ov"></div></div>
+      <div class="slide"><img src="https://source.unsplash.com/1400x600/?satun,thailand,island,andaman" alt="Satun island paradise, UNESCO Geopark, Southern Thailand"><div class="slide-ov"></div></div>
+      <div class="slide"><img src="https://source.unsplash.com/1400x600/?langkawi,malaysia,island,beach" alt="Langkawi Malaysia, gateway to the Geopark corridor"><div class="slide-ov"></div></div>
+      <div class="slide"><img src="https://source.unsplash.com/1400x600/?wellness,spa,thailand,retreat" alt="Wellness retreat Southern Thailand"><div class="slide-ov"></div></div>
     </div>
     <div class="hero-cap">
       <div class="cap active">Krabi — Limestone Karst Coast</div>
@@ -398,7 +398,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
     </div>
     <div class="geopark-card">
       <div class="geo-side">
-        <img src="https://images.unsplash.com/photo-1608037521244-f1c6573890dc?w=600&q=80&fit=crop" alt="Langkawi Malaysia UNESCO Geopark">
+        <img src="https://source.unsplash.com/600x220/?langkawi,malaysia,island,beach" alt="Langkawi Malaysia UNESCO Geopark entry point">
         <div class="geo-ov"><div class="geo-flag">🇲🇾</div><div class="geo-name" id="d-lk-name">Langkawi</div><div class="geo-sub" id="d-lk-sub">UNESCO Geopark · Malaysia gateway</div><div class="geo-ferry" id="d-lk-ferry">Kuah Jetty · Entry point</div></div>
       </div>
       <div class="geo-mid"><div class="geo-arrow">⇄</div><div class="geo-mid-txt" id="d-ferry-txt">Ferry ~45 min<br>Tammalang Pier</div><div class="geo-mid-pill">UNESCO</div></div>
@@ -412,7 +412,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <!-- MAHSURI HERITAGE TRAIL -->
   <div class="mahsuri-section">
     <div class="mahsuri-hero">
-      <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?w=1200&q=80&fit=crop" alt="Mahsuri Heritage Trail — Langkawi to Phuket">
+      <img src="https://source.unsplash.com/1200x230/?mahsuri,langkawi,legend,malaysia" alt="Mahsuri Heritage Trail — Langkawi to Phuket">
       <div class="mahsuri-hero-ov"></div>
       <div class="mahsuri-hero-content">
         <div class="mahsuri-eyebrow" id="mh-eyebrow">Legend Travel Route</div>
@@ -590,37 +590,39 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 </main>
 
 <script>
+const SRC="https://source.unsplash.com/460x300/?";
 const PHOTOS={
-  satun:"https://images.unsplash.com/photo-1559628376-f3fe19ca2f1b?w=460&q=78&fit=crop",
-  trang:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=460&q=78&fit=crop",
-  krabi:"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=460&q=78&fit=crop",
-  pattani:"https://images.unsplash.com/photo-1564507592333-c60657eea523?w=460&q=78&fit=crop",
-  hatyai:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=460&q=78&fit=crop",
-  songkhla:"https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=460&q=78&fit=crop",
-  narathiwat:"https://images.unsplash.com/photo-1559628376-f3fe19ca2f1b?w=460&q=78&fit=crop",
-  yala:"https://images.unsplash.com/photo-1564507592333-c60657eea523?w=460&q=78&fit=crop",
-  phatthalung:"https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=460&q=78&fit=crop",
-  nakhon:"https://images.unsplash.com/photo-1473181488821-2d23949a045a?w=460&q=78&fit=crop",
-  phuket:"https://images.unsplash.com/photo-1623494895229-39f85185cc82?w=460&q=78&fit=crop",
-  phangnga:"https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=460&q=78&fit=crop",
-  surat:"https://images.unsplash.com/photo-1448375240586-882707db888b?w=460&q=78&fit=crop",
-  ranong:"https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=460&q=78&fit=crop",
-  chumphon:"https://images.unsplash.com/photo-1559628376-f3fe19ca2f1b?w=460&q=78&fit=crop",
-  bangkok:"https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=460&q=78&fit=crop",
-  chiangmai:"https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=460&q=78&fit=crop",
-  kanchanaburi:"https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=460&q=78&fit=crop",
-  ayutthaya:"https://images.unsplash.com/photo-1473181488821-2d23949a045a?w=460&q=78&fit=crop",
-  kohlanta:"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=460&q=78&fit=crop",
-  langkawi:"https://images.unsplash.com/photo-1608037521244-f1c6573890dc?w=460&q=78&fit=crop"
+  satun:       SRC+"satun,thailand,island,andaman",
+  trang:       SRC+"trang,thailand,cave,emerald",
+  krabi:       SRC+"krabi,thailand,limestone,beach",
+  pattani:     SRC+"pattani,thailand,mosque,malay",
+  hatyai:      SRC+"hatyai,thailand,city,market",
+  songkhla:    SRC+"songkhla,thailand,lake,oldtown",
+  narathiwat:  SRC+"narathiwat,thailand,muslim,fishing",
+  yala:        SRC+"yala,thailand,mosque,southern",
+  phatthalung: SRC+"phatthalung,thailand,lake,nature",
+  nakhon:      SRC+"nakhon,thailand,waterfall,jungle",
+  phuket:      SRC+"phuket,thailand,beach,turquoise",
+  phangnga:    SRC+"phangnga,thailand,seacave,mangrove",
+  surat:       SRC+"suratthani,thailand,river,rainforest",
+  ranong:      SRC+"ranong,thailand,hotspring,mangrove",
+  chumphon:    SRC+"chumphon,thailand,diving,island",
+  bangkok:     SRC+"bangkok,thailand,skyline,city",
+  chiangmai:   SRC+"chiangmai,thailand,temple,mountain",
+  kanchanaburi:SRC+"kanchanaburi,thailand,river,bridge",
+  ayutthaya:   SRC+"ayutthaya,thailand,ruins,ancient",
+  kohlanta:    SRC+"kohlanta,thailand,island,beach",
+  langkawi:    SRC+"langkawi,malaysia,island,beach"
 };
 const LT={food:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=140&q=70&fit=crop",hotel:"https://images.unsplash.com/photo-1566073771259-6a8506099945?w=140&q=70&fit=crop",activity:"https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=140&q=70&fit=crop",eco:"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=140&q=70&fit=crop",package:"https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=140&q=70&fit=crop",medical:"https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=140&q=70&fit=crop",wellness:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=140&q=70&fit=crop"};
 
+const MSRC="https://source.unsplash.com/300x120/?";
 const MAHSURI_STOPS=[
-  {id:"langkawi",name:"Langkawi",detail:{en:"Makam Mahsuri — tomb of the legendary princess",bm:"Makam Mahsuri — pusara puteri legenda"},img:"https://images.unsplash.com/photo-1608037521244-f1c6573890dc?w=300&q=75&fit=crop"},
-  {id:"satun",name:"Satun",detail:{en:"Tammalang Pier — where her family crossed to Siam",bm:"Jeti Tammalang — di mana keluarganya menyeberang ke Siam"},img:"https://images.unsplash.com/photo-1559628376-f3fe19ca2f1b?w=300&q=75&fit=crop"},
-  {id:"trang",name:"Trang",detail:{en:"Malay Muslim heartland on the journey north",bm:"Kawasan jantung Muslim Melayu dalam perjalanan ke utara"},img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&q=75&fit=crop"},
-  {id:"krabi",name:"Krabi",detail:{en:"Koh Lanta — Muslim-majority island her descendants passed through",bm:"Koh Lanta — pulau majoriti Muslim yang dilalui keturunannya"},img:"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=300&q=75&fit=crop"},
-  {id:"phuket",name:"Phuket",detail:{en:"Kampung Kemala — where Wan Aishah, 7th descendant, was found in 2000",bm:"Kampung Kemala — tempat Wan Aishah, keturunan ke-7, dijumpai pada 2000"},img:"https://images.unsplash.com/photo-1623494895229-39f85185cc82?w=300&q=75&fit=crop"}
+  {id:"langkawi",name:"Langkawi",detail:{en:"Makam Mahsuri — tomb of the legendary princess",bm:"Makam Mahsuri — pusara puteri legenda"},        img:MSRC+"langkawi,malaysia,island,beach"},
+  {id:"satun",   name:"Satun",   detail:{en:"Tammalang Pier — where her family crossed to Siam",bm:"Jeti Tammalang — di mana keluarganya menyeberang ke Siam"},img:MSRC+"satun,thailand,pier,andaman"},
+  {id:"trang",   name:"Trang",   detail:{en:"Malay Muslim heartland on the journey north",bm:"Kawasan jantung Muslim Melayu dalam perjalanan ke utara"},  img:MSRC+"trang,thailand,cave,coast"},
+  {id:"krabi",   name:"Krabi",   detail:{en:"Koh Lanta — Muslim-majority island her descendants passed through",bm:"Koh Lanta — pulau majoriti Muslim yang dilalui keturunannya"},img:MSRC+"krabi,thailand,limestone,sea"},
+  {id:"phuket",  name:"Phuket",  detail:{en:"Kampung Kemala — where Wan Aishah, 7th descendant, was found in 2000",bm:"Kampung Kemala — tempat Wan Aishah, keturunan ke-7, dijumpai pada 2000"},img:MSRC+"phuket,thailand,beach,turquoise"}
 ];
 
 const VIDEOS=[
@@ -630,11 +632,12 @@ const VIDEOS=[
   {type:"YouTube",orient:"landscape",thumb:"https://images.unsplash.com/photo-1537953773345-d172ccf13cf4?w=400&q=75&fit=crop",channel:"NomadMuslim",title:{en:"Mahsuri Trail — following 200 years of legend",bm:"Laluan Mahsuri — mengikuti 200 tahun legenda"},meta:"340K views · YouTube"}
 ];
 
+const BSRC="https://source.unsplash.com/400x165/?";
 const BLOGS=[
-  {cat:"eco",catLabel:{en:"Eco-travel",bm:"Eko-pelancongan"},catCls:"bc-eco",img:"https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=75&fit=crop",author:"Afiqah Zainol",date:{en:"Apr 2025",bm:"Apr 2025"},initials:"AZ",avatarBg:"#d0f5eb",avatarColor:"#004d38",title:{en:"3 days in Trang — mangroves, halal food & a cave that stole my heart",bm:"3 hari di Trang — bakau, makanan halal & gua yang mencuri hati saya"},excerpt:{en:"I didn't plan to fall in love with Trang. Arriving by overnight train from Bangkok, I had low expectations — but the emerald cave changed everything.",bm:"Saya tidak merancang untuk jatuh cinta dengan Trang. Namun gua zamrud itu mengubah segalanya."},read:{en:"7 min read",bm:"7 minit baca"}},
-  {cat:"culture",catLabel:{en:"Heritage",bm:"Warisan"},catCls:"bc-culture",img:"https://images.unsplash.com/photo-1604999333679-b86d54738315?w=400&q=75&fit=crop",author:"Ustaz Hafizi Rahman",date:{en:"Mar 2025",bm:"Mac 2025"},initials:"HR",avatarBg:"#f0ebff",avatarColor:"#5b21b6",title:{en:"Walking the Mahsuri Trail — what the legend teaches us about forgiveness",bm:"Menelusuri Laluan Mahsuri — apa yang legenda ajar kita tentang kemaafan"},excerpt:{en:"Seven generations of suffering, a curse lifted by a simple act of return. I traced Mahsuri's journey from Langkawi to Phuket — and found something profound.",bm:"Tujuh generasi penderitaan, kutukan diangkat dengan satu tindakan kembali. Saya meneliti perjalanan Mahsuri dari Langkawi ke Phuket."},read:{en:"12 min read",bm:"12 minit baca"}},
-  {cat:"medical",catLabel:{en:"Medical Tourism",bm:"Pelancongan Perubatan"},catCls:"bc-medical",img:"https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=75&fit=crop",author:"Dr Norzahra Malik",date:{en:"Feb 2025",bm:"Feb 2025"},initials:"NM",avatarBg:"#dbeafe",avatarColor:"#1e40af",title:{en:"Bangkok Hospital Phuket — my honest review as a Malaysian patient",bm:"Bangkok Hospital Phuket — ulasan jujur saya sebagai pesakit Malaysia"},excerpt:{en:"After my knee surgery in Phuket, I spent a week recovering in a halal-friendly suite. Here's what the brochures don't tell you — the good and the honest.",bm:"Selepas pembedahan lutut di Phuket, saya habiskan seminggu untuk pulih. Ini yang brosur tidak beritahu anda."},read:{en:"9 min read",bm:"9 minit baca"}},
-  {cat:"food",catLabel:{en:"Halal Food",bm:"Makanan Halal"},catCls:"bc-food",img:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&q=75&fit=crop",author:"Ain Syafiqah",date:{en:"Jan 2025",bm:"Jan 2025"},initials:"AS",avatarBg:"#ffe0e0",avatarColor:"#7a0000",title:{en:"The ultimate halal food guide to Hatyai — 18 places I ate in 48 hours",bm:"Panduan makanan halal Hatyai terbaik — 18 tempat saya makan dalam 48 jam"},excerpt:{en:"Hatyai is overrated, they said. But nobody talks about the Muslim quarter near the market — where the real food scene lives, away from the tourist trail.",bm:"Hatyai terlalu popular, kata mereka. Tetapi tidak ramai yang tahu tentang kawasan Muslim berhampiran pasar."},read:{en:"11 min read",bm:"11 minit baca"}}
+  {cat:"eco",     catLabel:{en:"Eco-travel",bm:"Eko-pelancongan"},catCls:"bc-eco",    img:BSRC+"mangrove,kayak,trang,thailand",    author:"Afiqah Zainol",   date:{en:"Apr 2025",bm:"Apr 2025"},initials:"AZ",avatarBg:"#d0f5eb",avatarColor:"#004d38",title:{en:"3 days in Trang — mangroves, halal food & a cave that stole my heart",bm:"3 hari di Trang — bakau, makanan halal & gua yang mencuri hati saya"},        excerpt:{en:"I didn't plan to fall in love with Trang. Arriving by overnight train from Bangkok, I had low expectations — but the emerald cave changed everything.",bm:"Saya tidak merancang untuk jatuh cinta dengan Trang. Namun gua zamrud itu mengubah segalanya."},read:{en:"7 min read",bm:"7 minit baca"}},
+  {cat:"culture", catLabel:{en:"Heritage",bm:"Warisan"},          catCls:"bc-culture", img:BSRC+"langkawi,malaysia,legend,heritage",author:"Ustaz Hafizi Rahman",date:{en:"Mar 2025",bm:"Mac 2025"},initials:"HR",avatarBg:"#f0ebff",avatarColor:"#5b21b6",title:{en:"Walking the Mahsuri Trail — what the legend teaches us about forgiveness",bm:"Menelusuri Laluan Mahsuri — apa yang legenda ajar kita tentang kemaafan"},excerpt:{en:"Seven generations of suffering, a curse lifted by a simple act of return. I traced Mahsuri's journey from Langkawi to Phuket — and found something profound.",bm:"Tujuh generasi penderitaan, kutukan diangkat dengan satu tindakan kembali."},read:{en:"12 min read",bm:"12 minit baca"}},
+  {cat:"medical",  catLabel:{en:"Medical Tourism",bm:"Pelancongan Perubatan"},catCls:"bc-medical",img:BSRC+"hospital,medical,phuket,healthcare",author:"Dr Norzahra Malik",date:{en:"Feb 2025",bm:"Feb 2025"},initials:"NM",avatarBg:"#dbeafe",avatarColor:"#1e40af",title:{en:"Bangkok Hospital Phuket — my honest review as a Malaysian patient",bm:"Bangkok Hospital Phuket — ulasan jujur saya sebagai pesakit Malaysia"},excerpt:{en:"After my knee surgery in Phuket, I spent a week recovering in a halal-friendly suite. Here's what the brochures don't tell you.",bm:"Selepas pembedahan lutut di Phuket, saya habiskan seminggu untuk pulih. Ini yang brosur tidak beritahu anda."},read:{en:"9 min read",bm:"9 minit baca"}},
+  {cat:"food",    catLabel:{en:"Halal Food",bm:"Makanan Halal"},   catCls:"bc-food",   img:BSRC+"hatyai,thailand,food,market,halal",author:"Ain Syafiqah",    date:{en:"Jan 2025",bm:"Jan 2025"},initials:"AS",avatarBg:"#ffe0e0",avatarColor:"#7a0000",title:{en:"The ultimate halal food guide to Hatyai — 18 places I ate in 48 hours",bm:"Panduan makanan halal Hatyai terbaik — 18 tempat saya makan dalam 48 jam"},excerpt:{en:"Hatyai is overrated, they said. But nobody talks about the Muslim quarter near the market — where the real food scene lives.",bm:"Hatyai terlalu popular, kata mereka. Tetapi tidak ramai yang tahu tentang kawasan Muslim berhampiran pasar."},read:{en:"11 min read",bm:"11 minit baca"}}
 ];
 
 const CAT_MAP={food:["Food","Makanan"],hotel:["Stay","Penginapan"],activity:["Activity","Aktiviti"],eco:["Eco-tour","Eko-tour"],medical:["Medical","Perubatan"],wellness:["Wellness","Kesihatan"],package:["Package","Pakej"]};
@@ -813,7 +816,7 @@ function renderRouteStops(){
   const l=L(),wrap=document.getElementById("route-steps");
   if(!routeStops.length){wrap.innerHTML=`<div class="stop-empty">${lang==="bm"?"Tambah destinasi pertama anda di atas":"Add your first destination above"}</div>`;document.getElementById("route-summary-wrap").style.display="none";return;}
   const stops=[{id:"langkawi",name:"Langkawi 🇲🇾",detail:lang==="bm"?"Titik mula — Jeti Kuah":"Starting point — Kuah Jetty",nights:0,isStart:true},...routeStops.map(rid=>{const r=REGIONS.find(x=>x.id===rid);return{id:rid,name:r.name,detail:r.tagline[lang],nights:r.nights};})];
-  wrap.innerHTML=stops.map((s,i)=>`${i>0?`<div class="stop-conn">${i===1?"⇄ ferry ~45 min → Tammalang Pier":"→ road / ferry"}</div>`:""}<div class="stop-card${s.isStart?" anch":""}"><div class="stop-num">${i+1}</div><div class="stop-img"><img src="${PHOTOS[s.id]||PHOTOS.satun}" alt="${s.name}" loading="lazy"></div><div class="stop-body"><div class="stop-name">${s.name}</div><div class="stop-detail">${s.detail}${s.nights?` · ${s.nights} ${l.rNights}`:""}</div></div>${!s.isStart?`<button class="remove-btn" onclick="removeStop('${s.id}')">${l.rRemove}</button>`:""}</div>`).join("");
+  wrap.innerHTML=stops.map((s,i)=>`${i>0?`<div class="stop-conn">${i===1?"⇄ ferry ~45 min → Tammalang Pier":"→ road / ferry"}</div>`:""}<div class="stop-card${s.isStart?" anch":""}"><div class="stop-num">${i+1}</div>      <div class="stop-img"><img src="https://source.unsplash.com/44x44/?${s.isStart?"langkawi,malaysia,island":PHOTOS[s.id]?s.id+",thailand":"beach,thailand"}" alt="${s.name}" loading="lazy"></div><div class="stop-body"><div class="stop-name">${s.name}</div><div class="stop-detail">${s.detail}${s.nights?` · ${s.nights} ${l.rNights}`:""}</div></div>${!s.isStart?`<button class="remove-btn" onclick="removeStop('${s.id}')">${l.rRemove}</button>`:""}</div>`).join("");
   const tn=routeStops.reduce((a,rid)=>a+(REGIONS.find(x=>x.id===rid).nights||0),0);
   document.getElementById("route-summary-wrap").style.display="block";
   document.getElementById("route-summary").innerHTML=`<div class="rs-row"><span class="rs-label">${lang==="bm"?"Jumlah destinasi":"Total destinations"}</span><span class="rs-val">${routeStops.length} ${lang==="bm"?"kawasan":"regions"}</span></div><div class="rs-row"><span class="rs-label">${lang==="bm"?"Malam cadangan":"Suggested nights"}</span><span class="rs-val">${tn} ${l.rNights}</span></div><div class="rs-row"><span class="rs-label">${lang==="bm"?"Jumlah hari":"Total days"}</span><span class="rs-val">${tn+1} ${l.rDays}</span></div><div class="rs-row"><span class="rs-label">${lang==="bm"?"Pintu masuk":"Entry point"}</span><span class="rs-val">Langkawi → Satun ferry</span></div>`;
