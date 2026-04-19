@@ -804,13 +804,52 @@ function genItin(){
   all.forEach((r,i)=>{const n=r.nights||0;html+=`<div class="itin-day"><div class="itin-day-lbl">${lang==="bm"?"Hari":"Day"} ${day}${n>1?" – "+(day+n-1):""}  · ${r.name}</div>`;if(i===0){html+=`<div class="itin-item">${lang==="bm"?"Tiba Langkawi, daftar masuk":"Arrive Langkawi, check in"}</div><div class="itin-item">${lang==="bm"?"Makan malam: restoran halal tempatan":"Dinner: local halal restaurant"}</div>`;}else{if(i===1)html+=`<div class="itin-item">${lang==="bm"?"Feri pagi Kuah → Tammalang (~45 minit)":"Morning ferry Kuah → Tammalang (~45 min)"}</div>`;(r.listings||[]).slice(0,3).forEach(li=>{html+=`<div class="itin-item"><strong>${li.name}</strong>${li.desc&&li.desc[lang]?" — "+li.desc[lang]:""}</div>`;});}html+="</div>";day+=Math.max(n,1);});
   box.innerHTML=html;box.style.display="block";box.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
-function submitPartner(){
+async function submitPartner(){
   const name=document.getElementById("pf-bname").value.trim();
   const contact=document.getElementById("pf-contact").value.trim();
   const phone=document.getElementById("pf-phone").value.trim();
-  if(!name||!contact||!phone){alert(lang==="bm"?"Sila lengkapkan medan bertanda *.":"Please fill in required fields (*).");return;}
-  document.getElementById("partner-form").style.display="none";
-  document.getElementById("partner-ok").classList.add("show");
+  if(!name||!contact||!phone){
+    alert(lang==="bm"?"Sila lengkapkan medan bertanda *.":"Please fill in required fields (*).");
+    return;
+  }
+  const btn=document.getElementById("pf-submit");
+  btn.textContent=lang==="bm"?"Menghantar...":"Submitting...";
+  btn.disabled=true;
+
+  const payload={
+    businessName: name,
+    category: document.getElementById("pf-cat").value,
+    region: document.getElementById("pf-region-sel").value,
+    description: document.getElementById("pf-desc").value,
+    contactPerson: contact,
+    whatsapp: phone,
+    email: document.getElementById("pf-email").value,
+    notes: document.getElementById("pf-note").value,
+    language: lang==="bm"?"Bahasa Melayu":"English",
+    submittedAt: new Date().toLocaleString("en-MY",{timeZone:"Asia/Kuala_Lumpur"})
+  };
+
+  try{
+    const res=await fetch("https://formspree.io/f/mpqkryda",{
+      method:"POST",
+      headers:{"Content-Type":"application/json","Accept":"application/json"},
+      body:JSON.stringify(payload)
+    });
+    if(res.ok){
+      document.getElementById("partner-form").style.display="none";
+      document.getElementById("partner-ok").classList.add("show");
+    } else {
+      const data=await res.json();
+      alert((lang==="bm"?"Ralat penghantaran: ":"Submission error: ")+(data?.error||"Please try again."));
+      btn.textContent=lang==="bm"?L().pfSubmit:L().pfSubmit;
+      btn.disabled=false;
+    }
+  } catch(e){
+    alert(lang==="bm"
+      ?"Tiada sambungan internet. Sila cuba lagi.":"Network error. Please check your connection and try again.");
+    btn.textContent=L().pfSubmit;
+    btn.disabled=false;
+  }
 }
 
 function applyAll(){
